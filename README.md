@@ -1,4 +1,4 @@
-# f5-waap-waf-lab
+# f5-waap-labs
 F5 WAAP labs
 
 ## Support
