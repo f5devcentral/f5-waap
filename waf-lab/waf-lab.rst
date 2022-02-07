@@ -1,7 +1,7 @@
 Create Origin Pools
 ====================
 
-Before we create an HTTP load balancer to expose our services on the internet, 
+Before we create an HTTP load balancer to expose our app on the internet, 
 we'll define "Origin Pools" for our application's services.
 
 This initial Origin Pool will use the Public DNS record of our target webserver 
