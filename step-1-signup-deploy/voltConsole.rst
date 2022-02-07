@@ -1,3 +1,11 @@
+Sign-up for F5 WAAP Service
+==========================
+
+Customers and partners can use self-service sign-up option to create Free/Individual/Teams level tenants. 
+To sign-up navigate to 
+
+
+
 Logging into VoltConsole
 ========================
 
@@ -17,7 +25,7 @@ The following is a video that covers the steps involved.
 
 .. raw:: html
   
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/AGV6z1-7NdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="vimeo-player" src="https://player.vimeo.com/video/419125342?h=e8f5565d17" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 
 **VoltConsole**
