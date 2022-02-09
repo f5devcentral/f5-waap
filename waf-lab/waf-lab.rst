@@ -211,7 +211,7 @@ Exercise 3: Configure WAF Policy
     App Firewall                                  blocking-app-firewall
     ============================================= =====================
 
-#. Click "*Save and Exit* to create the HTTP Load Balancer.
+#. Click "*Save and Exit* to create the HTTP Load Balancer".
 
 Once the HTTP Load Balancer has been deployed, you should now be able to go to the DNS name that you entered 
 previously in a web browser.  The FQDN we used in our example is http://studentXX.sales-public.f5demos.com.  
