@@ -1,5 +1,10 @@
+.. _waf_lab:
+
+Secure the Hipster App
+######################
+
 Create Origin Pools
-====================
+===================
 
 Before we create an HTTP load balancer to expose our app on the internet, 
 we'll define "Origin Pools" for our application's services.
