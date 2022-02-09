@@ -2,7 +2,7 @@
 F5 WAAP solution WAF microlab sign-up and deploy stage. 
 It is optional and can be skipped if the Hipster App has been already deployed in the target tenant.
 
-Start by navigating to [voltConsole.rst](voltConsole.rst)
+Start by navigating to [Sign Up and Deploy](voltConsole.rst)
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).

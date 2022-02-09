@@ -1,5 +1,6 @@
 # f5-waap-waf-lab
 F5 WAF lab as part of F5 WAAP solution microlabs
+Start by navigating to [WAF lab](waf-lab.rst)
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).

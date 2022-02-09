@@ -1,9 +1,18 @@
 # f5-waap-labs
 F5 WAAP labs
 
+Watch the F5 WAAP overview before starting with the labs:
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/420386926?h=825a452739" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+
 WAF microlab guides the user through the process of adding a LB object as well as application firewall to a previously deployed App in the tenant.
-For those tenants that don't have a Hipster App deployed, start with [voltConsole.rst](step-1-signup-deploy/voltConsole.rst)
-Otherwise to proceed with WAF microlab, navigate to [waf-lab.rst](waf-lab/waf-lab.rst)
+For those tenants that don't have a Hipster App deployed, start with [Sign up and Deploy Hipster App](step-1-signup-deploy/voltConsole.rst)
+Otherwise to proceed with WAF microlab, navigate to [WAF Lab](waf-lab/waf-lab.rst)
+
+Bot microlab uses the Airline App which can be deployed ``here``
+
+
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
