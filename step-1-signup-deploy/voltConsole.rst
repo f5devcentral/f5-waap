@@ -106,6 +106,9 @@ Deploy Hipster App
    #. Update variables in https://raw.githubusercontent.com/f5devcentral/volt-demo-app/main/terraform/variables.tf 
    #. Run "terraform init" followed  by "terraform apply" which will create necessary infrastructure in F5DC and deploy the Hipster App along with traffic gen container
 
-What's Next?
+Next: |waf-lab|
 
-:doc:`Protect Hipster App <../waf-lab/waf-lab>`
+.. |waf-lab| raw:: html
+
+            <a href="https://github.com/f5devcentral/f5-waap/tree/main/waf-lab" target="_blank">Protect Hipster App</a>
+
