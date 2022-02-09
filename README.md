@@ -3,7 +3,10 @@ F5 WAAP labs
 
 Watch the F5 WAAP overview before starting with the labs:
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/420386926?h=825a452739" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+https://vimeo.com/420386926
+
+Refer to platform documentation on ``App Security and Performance``
+https://www.volterra.io/docs/quick-start/web-app-security-performance
 
 
 WAF microlab guides the user through the process of adding a LB object as well as application firewall to a previously deployed App in the tenant.
