@@ -3,6 +3,7 @@ Sign-up for F5 WAAP Service
 
 
 Customers and partners can use self-service sign-up option to create Free/Individual/Teams level tenants. 
+
 #. To sign-up navigate to https://volterra.io/ and click ``Sign up`` 
 
    .. image:: ../_static/volterra_io.png
@@ -14,7 +15,7 @@ Customers and partners can use self-service sign-up option to create Free/Indivi
 
 #. Fill out personal details form and click  ``Next`` or ``Create account`` depending on the account level i.e. Individual/teams level accounts have an extra step to provide a payment method
 
-.. note:: Organization-level accounts ("Organization Plan") can be requested by contacting the F5 Sales or Account team
+   .. note:: Organization-level accounts ("Organization Plan") can be requested by contacting the F5 Sales or Account team
 
 Logging into VoltConsole
 ========================
@@ -28,13 +29,6 @@ You will need to create a password that will be associated with your email addre
 
 If you have NOT received an email from our system you may need to provide an alternate
 email address that we can use for the purposes of this lab.
-
-The following is a video that covers the steps involved.
-
-.. raw:: html
-  
-  <iframe title="vimeo-player" src="https://player.vimeo.com/video/419125342?h=e8f5565d17" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
 
 Free/Individual accounts login uses Email/Password whereas Team/Organization accounts may use Email/Password or SSO options.
 
@@ -79,9 +73,9 @@ F5 employees
    clicking on "Account Settings"
 
    .. image:: ../_static/screenshot-account-settings.png
-#. Next click on "My Namespaces" and take note of the `yourName` namespace that you have been assigned. For example, John Smith's namespace 
+#. Next click on "My Namespaces" and take note of the `yourName` namespace that you have been assigned. For example, John Smith's namespace would be created as "j-smith"
 
-   .. image:: ../_static/screenshot-mynamespaces.png 
+   .. image:: ../_static/j-smith.png 
 
 F5 customers
 ~~~~~~~~~~~~
@@ -101,7 +95,7 @@ Deploy Hipster App
 
 #. Delegate DNS domain to F5DC by navigating to "DNS Management" -> "Add Delegated domain"
 
-#. Deploy Hipster App by following steps in https://github.com/f5devcentral/volt-demo-app repo.
+#. Deploy Hipster App by cloning and following steps in https://github.com/f5devcentral/volt-demo-app repo.
 
    #. Create API certificate file by clicking on "Account Settings" -> "Credentials" -> "Create credentials"
 
