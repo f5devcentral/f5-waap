@@ -3,7 +3,9 @@ F5 WAAP labs
 
 Watch the F5 WAAP overview before starting with the labs:
 
-https://vimeo.com/420386926
+1. https://vimeo.com/420386926
+2. https://vimeo.com/420389494
+3. https://vimeo.com/420391402
 
 Refer to platform documentation on ``App Security and Performance``
 https://www.volterra.io/docs/quick-start/web-app-security-performance
