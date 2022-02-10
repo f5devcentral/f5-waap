@@ -1,7 +1,7 @@
 Deploy Hipster App
 ===================
 
-.. note:: F5 employees using F5-managed tenant should skip the steps below and instead use the deployed app running in "demo-app" namespace
+    .. note:: F5 employees using F5-managed tenant should skip the steps below and instead use the deployed app running in "demo-app" namespace
 
 #. Delegate DNS domain to F5DC by navigating to ``DNS Management`` -> ``Add Delegated domain``
 
