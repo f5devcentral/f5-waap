@@ -4,7 +4,7 @@ Sign-up for F5 WAAP Service
 
 Customers and partners can use self-service sign-up option to create Free/Individual/Teams level tenants. 
 
-#. To sign-up navigate to https://cloud.f5.com/ and click ``Sign up`` 
+#. To sign-up navigate to |f5dc| and click ``Sign up`` 
 
    .. image:: ../_static/volterra_io.png
 
@@ -95,3 +95,8 @@ Next: |deploy-app|
 .. |deploy-app| raw:: html
 
             <a href="https://github.com/f5devcentral/f5-waap/tree/main/step-1-signup-deploy/deployApp.rst" target="_blank">Deploy Hipster App</a>
+
+
+.. |f5dc| raw:: html
+
+            <a href="https://volterra.io" target="_blank">F5 Distributed Cloud Platform</a>
