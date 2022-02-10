@@ -11,16 +11,21 @@ we'll define "Origin Pools" for our application's services.
 
 This initial Origin Pool will use the Public DNS record of our target webserver 
 to locate the IP address of the Origin Pool members.  This is an example of using 
-the Public Internet to route traffic to our services.  In later examples we will 
-look at routing traffic via VoltMesh to our services.
+the Public Internet to route traffic to our services.
 
-Exercise 1: Create Public Origin Pool
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We will first create an Origin Pool that refers to the "Public Endpoint" site in our lab environment.
+.. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5DC Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5DCP WAF.
 
-#. Start in VoltConsole and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
+Create Public Origin Pool
+~~~~~~~~~~~~~~~~~~~~~~~~~
+We will first create an Origin Pool that refers to the "Public Endpoint" site in our tenant.
 
-#. Navigate the menu to go to "Manage"->"Load Balancers"->"Origin Pools". Click on *Add Origin Pool*.
+#. Start in F5DC Console and switch to the "Web App & API Protection" context. [You should already be here from previous step]
+
+#. Next select namespace created in "Sign-up for F5 WAAP Service" step
+
+   .. image:: ../_static/app-ns.png 
+
+#. Navigate the menu to go to ``Manage``->``Load Balancers``->``Origin Pools``. Click on ``Add Origin Pool``.
 
 #. Enter the following variables:
 
@@ -99,9 +104,9 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
 Create WAF Policy
 =================
 
-Volterra WAF shares the same WAF engine that is used by F5 BIG-IP WAF and F5 NGINX App Protect.
+F5 Distributed Cloud Platform WAF shares the same WAF engine that is used by F5 BIG-IP WAF and F5 NGINX App Protect.
 
-The Volterra WAF engine provides preset categories of rules to protect your web 
+The F5 Distributed Cloud Platform WAF engine provides preset categories of rules to protect your web 
 applications, provides the ability to run in a monitor or blocking mode, prevent 
 false positives by excluding individual rules, IP addresses, or web application paths
 
@@ -112,7 +117,7 @@ Exercise 1: Create WAF Policy
 
 We will create a blocking WAF policy.
 
-#. Start in VoltConsole and switch to the "Web App & API Protection" context. 
+#. Start in F5DC Console and switch to the "Web App & API Protection" context. 
 
    It can be access either from the main Home page or via the "Select Service" menu on a Page 
 
@@ -154,19 +159,19 @@ The entire video is 10 minutes total from start to finish.
 
     
 
-Creating HTTP Load Balancer on Volterra Regional Edge
+Creating HTTP Load Balancer on F5 Distributed Cloud Platform Regional Edge
 =====================================================
 
-In this exercise we will be creating a "Global VIP" that will exist on the Volterra Global Network.
+In this exercise we will be creating a "Global VIP" that will exist on the F5 Distributed Cloud Platform Global Network.
 
 It will protect a public resource that exists in the lab's AWS Lab Environment.
 
-.. image:: ../_static/testdrive-volterra-waf-global-vip.png
+.. image:: ../_static/testdrive-F5 Distributed Cloud Platform-waf-global-vip.png
 
 Exercise 1: HTTP Load Balancer Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Start in VoltConsole and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
+#. Start in F5DC Console and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
 
 #. Navigate the menu to go to "Manage"->"Load Balancers" -> "HTTP Load Balancers" and click on "Add HTTP Load Balancer".
 
@@ -227,7 +232,7 @@ The public demo app should look like the following:
 .. image:: ../_static/screenshot-global-vip-public.png
   :width: 50%
 
-In this topology we are sending traffic to an AnyCast IP that is hosted in Volterra's Regional Edge.
+In this topology we are sending traffic to an AnyCast IP that is hosted in F5 Distributed Cloud Platform's Regional Edge.
 
 We then connect to the AWS resource via it's Public IP address.  
 
@@ -240,7 +245,7 @@ You should see a block page.
 Exercise 5: Performance and Security 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Start in VoltConsole and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
+#. Start in F5DC Console and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
 
 We can view details of successful requests and blocks by navigating to "Apps & APIs"
 
@@ -273,16 +278,22 @@ We can view details of successful requests and blocks by navigating to "Apps & A
        :width: 50%
 
 
-Next we will demonstrate how we 
-can securely connect to your private AWS resources via a VoltMesh node.
 
 Video Walkthrough 
 ~~~~~~~~~~~~~~~~~
-Optional Video you can watch if you get stuck
+Optional Videos you can watch if you get stuck
 
 .. raw:: html
    
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/s-BHH0Qayfc?start=108" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="vimeo-player" src="https://player.vimeo.com/video/420386926?h=825a452739" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+.. raw:: html
+
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/420389494?h=8fdd942550" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+.. raw:: html
+
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/420391402?h=f2fcc22c33" width="640" height="376" frameborder="0" allowfullscreen></iframe>
 
 .. |app-context| image:: ../_static/app-context.png
 .. |lb-basic| image:: ../_static/lb-basic.png
