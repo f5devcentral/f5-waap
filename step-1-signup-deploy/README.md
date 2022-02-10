@@ -1,24 +1,8 @@
-# f5-waap-labs
-F5 Distributed Cloud Platform WAAP labs
+# f5-waap-waf-signup-deploy
+F5 WAAP solution WAF microlab sign-up and deploy stage. 
+It is optional and can be skipped if the Hipster App has been already deployed in the target tenant.
 
-Watch the F5 WAAP overview before starting with the labs:
-
-1. https://vimeo.com/420386926
-2. https://vimeo.com/420389494
-3. https://vimeo.com/420391402
-
-Refer to Platform documentation on ``App Security and Performance``
-https://www.volterra.io/docs/quick-start/web-app-security-performance
-
-
-WAF microlab guides the user through the process of adding a LB object as well as application firewall to a previously deployed App in the tenant.
-
-- For those tenants that don't have a Hipster App deployed, start with [Sign up and Deploy Hipster App](step-1-signup-deploy/voltConsole.rst).
-- Otherwise to proceed with WAF microlab, navigate to [WAF Lab](waf-lab/waf-lab.rst)
-
-Bot microlab uses the Airline App which can be deployed ``here``
-
-
+Start by navigating to [Sign Up and Deploy](voltConsole.rst)
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
