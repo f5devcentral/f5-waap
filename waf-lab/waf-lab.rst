@@ -13,7 +13,7 @@ This initial Origin Pool will use the Public DNS record of our target webserver
 to locate the IP address of the Origin Pool members.  This is an example of using 
 the Public Internet to route traffic to our services.
 
-.. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5DC Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5DCP WAF.
+    .. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5DC Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5DCP WAF.
 
 Create Public Origin Pool
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -270,15 +270,15 @@ Video Walkthrough
 ~~~~~~~~~~~~~~~~~
 Optional Videos you can watch if you get stuck
 
-.. raw:: html
+#. .. raw:: html
    
   <a href="https://player.vimeo.com/video/420386926?h=825a452739" target="_blank">Step 1</a>
 
-.. raw:: html
+#. .. raw:: html
 
     <a href="https://player.vimeo.com/video/420389494?h=8fdd942550" target="_blank">Step 2</a>
 
-.. raw:: html
+#. .. raw:: html
 
     <a href="https://player.vimeo.com/video/420391402?h=f2fcc22c33" target="_blank">Step 3</a>
 

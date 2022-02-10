@@ -18,4 +18,4 @@ Next: |waf-lab|
 
 .. |waf-lab| raw:: html
 
-            <a href="https://github.com/f5devcentral/f5-waap/tree/main/waf-lab" target="_blank">Protect Hipster App</a>
+            <a href="https://github.com/f5devcentral/f5-waap/blob/main/waf-lab/waf-lab.rst" target="_blank">WAF lab: Protect Hipster App</a>
