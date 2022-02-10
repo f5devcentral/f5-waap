@@ -21,11 +21,13 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
 
 #. Start in F5DC Console and switch to the "Web App & API Protection" context. [You should already be here from previous step]
 
+    |app-context|
+
 #. Next select namespace created in "Sign-up for F5 WAAP Service" step
 
    .. image:: ../_static/app-ns.png 
 
-#. Navigate the menu to go to ``Manage``->``Load Balancers``->``Origin Pools``. Click on ``Add Origin Pool``.
+#. Navigate the menu to go to ``Manage`` -> ``Load Balancers`` -> ``Origin Pools``. Click on ``Add Origin Pool``.
 
 #. Enter the following variables:
 
@@ -43,7 +45,7 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
     Variable                          Value
     ================================= =====
     Select Type of Origin Server      Public DNS Name of Origin Server [default]
-    DNS Name                          public.lab.f5demos.com
+    DNS Name                          <subdomain>.f5demos.com
     ================================= =====
     
     |op-pool-basic|
@@ -99,6 +101,7 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
 .. |op-pool-basic| image:: ../_static/op-pool-basic.png
 .. |op-spa-check| image:: ../_static/op-spa-check.png
 .. |op-tshoot| image:: ../_static/op-tshoot.png
+.. |lb-basic| image:: ../_static/lb-basic.png
 
 
 Create WAF Policy
@@ -112,8 +115,8 @@ false positives by excluding individual rules, IP addresses, or web application 
 
 In the next exercise you will configure a basic WAF policy 
 
-Exercise 1: Create WAF Policy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create WAF Policy
+~~~~~~~~~~~~~~~~~~
 
 We will create a blocking WAF policy.
 
@@ -123,7 +126,7 @@ We will create a blocking WAF policy.
 
     |app-context|
 
-#. Navigate the menu to go to "Manage"->"App Firewall". Click on *Add App Firewall*.
+#. Navigate the menu to go to ``Manage`` -> ``App Firewall``. Click on *Add App Firewall*.
 
 
 #. Enter the following variables:
@@ -142,38 +145,23 @@ We will create a blocking WAF policy.
 
 #. Click the *Save and Exit* button to create the policy
 
-Video Walkthrough 
-~~~~~~~~~~~~~~~~~
-Optional Video you can watch if you get stuck
 
-Note that each of the videos will start at a specific timestamp.  
-
-The entire video is 10 minutes total from start to finish.
-
-.. raw:: html
-   
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/s-BHH0Qayfc?start=41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-.. |app-context| image:: ../_static/app-context.png
-    :width: 75%
-
-    
 
 Creating HTTP Load Balancer on F5 Distributed Cloud Platform Regional Edge
 =====================================================
 
 In this exercise we will be creating a "Global VIP" that will exist on the F5 Distributed Cloud Platform Global Network.
 
-It will protect a public resource that exists in the lab's AWS Lab Environment.
+It will protect a public resource that points to the Hipster App frontend origin.
 
-.. image:: ../_static/testdrive-F5 Distributed Cloud Platform-waf-global-vip.png
+
 
 Exercise 1: HTTP Load Balancer Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Start in F5DC Console and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
 
-#. Navigate the menu to go to "Manage"->"Load Balancers" -> "HTTP Load Balancers" and click on "Add HTTP Load Balancer".
+#. Navigate the menu to go to ``Manage`` -> ``Load Balancers`` -> ``HTTP Load Balancers`` and click on "Add HTTP Load Balancer".
 
 #. Enter the following variables:
 
@@ -181,7 +169,7 @@ Exercise 1: HTTP Load Balancer Configuration
     Variable                          Value
     ================================= =====
     Name                              global
-    Domains                           studentXXX.sales-public.f5demos.com
+    Domains                           <yourName>.f5demos.com
     Select type of Load Balancer      HTTP
     Automatically Manage DNS Records  Yes/Check 
     ================================= =====
@@ -218,11 +206,10 @@ Exercise 3: Configure WAF Policy
 
 #. Click "*Save and Exit* to create the HTTP Load Balancer".
 
-Once the HTTP Load Balancer has been deployed, you should now be able to go to the DNS name that you entered 
-previously in a web browser.  The FQDN we used in our example is http://studentXX.sales-public.f5demos.com.  
+Once the HTTP Load Balancer has been deployed, you should now be able to go to the CNAME that has been generated. 
 Your FQDN should follow the format of [unique name].[supplied domain name for your tenant].
 
-.. note:: If you are having challenges connecting to the "f5demos.com" name you can also try connecting to the "ves.io" name.
+.. note::  "ves.io" name.
 
 Exercise 4: Verify Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -285,16 +272,14 @@ Optional Videos you can watch if you get stuck
 
 .. raw:: html
    
-  <iframe title="vimeo-player" src="https://player.vimeo.com/video/420386926?h=825a452739" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+  <a href="https://player.vimeo.com/video/420386926?h=825a452739" target="_blank">Step 1</a>
 
 .. raw:: html
 
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/420389494?h=8fdd942550" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    <a href="https://player.vimeo.com/video/420389494?h=8fdd942550" target="_blank">Step 2</a>
 
 .. raw:: html
 
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/420391402?h=f2fcc22c33" width="640" height="376" frameborder="0" allowfullscreen></iframe>
+    <a href="https://player.vimeo.com/video/420391402?h=f2fcc22c33" target="_blank">Step 3</a>
 
-.. |app-context| image:: ../_static/app-context.png
-.. |lb-basic| image:: ../_static/lb-basic.png
 

@@ -4,7 +4,7 @@ Sign-up for F5 WAAP Service
 
 Customers and partners can use self-service sign-up option to create Free/Individual/Teams level tenants. 
 
-#. To sign-up navigate to https://volterra.io/ and click ``Sign up`` 
+#. To sign-up navigate to https://cloud.f5.com/ and click ``Sign up`` 
 
    .. image:: ../_static/volterra_io.png
 
@@ -85,7 +85,7 @@ F5 customers
 
    .. image:: ../_static/screenshot-account-settings.png
 
-#. Next click on "My Namespaces" -> "Add namespace". Fill out "Name" field and optionally assign users and explicit roles for the new namespace. Click "Save changes"
+#. Next click on ``My Namespaces`` -> ``Add namespace``. Fill out "Name" field and optionally assign users and explicit roles for the new namespace. Click "Save changes"
 
    .. image:: ../_static/volterra_create_ns.png
 

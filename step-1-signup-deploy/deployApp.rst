@@ -1,11 +1,11 @@
 Deploy Hipster App
 ===================
 
-#. Delegate DNS domain to F5DC by navigating to "DNS Management" -> "Add Delegated domain"
+#. Delegate DNS domain to F5DC by navigating to ``DNS Management`` -> ``Add Delegated domain``
 
 #. Deploy Hipster App by cloning and following steps in https://github.com/f5devcentral/volt-demo-app repo.
 
-   #. Create API certificate file by clicking on "Account Settings" -> "Credentials" -> "Create credentials"
+   #. Create API certificate file by clicking on ``Account Settings`` -> ``Credentials`` -> ``Create credentials``
 
       #. Fill out the details and select "API Certificate" as a Credential type 
 
