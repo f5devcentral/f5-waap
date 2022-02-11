@@ -57,7 +57,7 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
     ================================= =====
     Variable                          Value
     ================================= =====
-    Port                              80
+    Port                              443
     ================================= =====
 
 
@@ -82,6 +82,11 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
     ========= =====
 
 #. Click *Apply* to exit the "Health Check HTTP Parameters" dialogue.
+#. Under ``TLS Configuration`` expand the dropdown list and select "TLS". Leave other parameters default
+
+    |tls|
+
+
 #. Click *Continue* to return to the "Origin Pool" configuration.
 #. Click the *Save and Exit* button to create the Origin Pool.
 
@@ -102,6 +107,7 @@ We will first create an Origin Pool that refers to the "Public Endpoint" site in
 .. |op-spa-check| image:: ../_static/op-spa-check.png
 .. |op-tshoot| image:: ../_static/op-tshoot.png
 .. |lb-basic| image:: ../_static/lb-basic.png
+.. |tls| image:: ../_static/tls.png
 
 
 Create WAF Policy
@@ -156,8 +162,8 @@ It will protect a public resource that points to the Hipster App frontend origin
 
 
 
-Exercise 1: HTTP Load Balancer Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HTTP Load Balancer Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Start in F5DC Console and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
 
