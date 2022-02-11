@@ -13,7 +13,7 @@ This initial Origin Pool will use the Public DNS record of our target webserver
 to locate the IP address of the Origin Pool members.  This is an example of using 
 the Public Internet to route traffic to our services.
 
-.. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5 Distributed Cloud Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5 Distributed Cloud WAF. F5 Distributed Cloud WAF can also protect an existing customer application which is located anywhere like on-premises, private or public Cloud which would be a similar configuration. 
+.. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5 Distributed Cloud Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5 Distributed Cloud WAF. F5 Distributed Cloud WAF can also protect an existing customer application that is located for instance on-premises, private or public Cloud whith similar configuration steps. 
 
 Create Public Origin Pool
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,7 +143,7 @@ We will create a blocking WAF policy.
 
     .. image:: ../_static/blocking-app-firewall-policy.png
 
-#. Click the *Save and Exit* button to create the policy
+#. Leave the *Detection Settings* as Default and Click the *Save and Exit* button to create the policy
 
 
 
