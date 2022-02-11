@@ -17,14 +17,14 @@ Customers and partners can use self-service sign-up option to create Free/Indivi
 
    .. note:: Organization-level accounts ("Organization Plan") can be requested by contacting the F5 Sales or Account team
 
-Logging into VoltConsole
-========================
+Logging into F5 Distributed Cloud Console
+=========================================
 
 
-Login to VoltConsole
-~~~~~~~~~~~~~~~~~~~~~
+Login to F5 Distributed Cloud Console
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You should have received an email with an invitation to access VoltConsole.
+You should have received an email with an invitation to access F5 Distributed Cloud Console.
 You will need to create a password that will be associated with your email address.
 
 If you have NOT received an email from our system you may need to provide an alternate
@@ -34,13 +34,11 @@ Free/Individual accounts login uses Email/Password whereas Team/Organization acc
 
    .. image:: ../_static/volterra_login.png
 
-**VoltConsole**
+**F5 Distributed Cloud Console**
 
-VoltConsole is a SaaS control-plane for Volterra services that provides a UI and API for managing network, security, and compute services.
+F5 Distributed Cloud Console is a SaaS control-plane for Distributed Cloud Platform services that provides a UI and API for managing network, security, and compute services.
 
-VoltConsole can manage "sites" in existing on-prem data centers and sites in AWS, Azure, and GCP cloud environments.
-
-Using VoltConsole, an end-user can centrally manage a distributed application environment.
+Using F5 Distributed Cloud Console, an end-user can centrally manage distributed application environments and Platform services.
 
 Terminology
 ~~~~~~~~~~~~~
@@ -51,15 +49,15 @@ Namespace
 Select your Persona
 ~~~~~~~~~~~~~~~~~~~
 
-#. Log into Volterra tenant. F5 SEs should use their assigned tenant i.e. https://f5-sales-public.console.ves.volterra.io/
+#. Log into F5 Distributed Cloud Platform tenant. F5 SEs should use their assigned tenant i.e. https://f5-sales-public.console.ves.volterra.io/
 
-    .. note:: The VoltConsole GUI has a relatively short timeout. This is not configurable. We have an enhancement request to allow this to be configured.
+    .. note:: The F5 Distributed Cloud Console GUI has a relatively short timeout. This is not configurable. We have an enhancement request to allow this to be configured.
 
 #. When you first login you will need to select your "persona"
 
    Enter your persona as "SecOps" and level as "Intermediate".  You can change these settings after logging in as well.
 
-   Your persona will highlight workflows within Volterra.  You will be able to access all services, but making use of
+   Your persona will highlight workflows within F5 Distributed Cloud Platform.  You will be able to access all services, but making use of
    personas can focus your view on particular tasks that are relevant to your role.
 
 #. Several tooltips will appear.  You can close these out.
