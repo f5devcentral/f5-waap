@@ -193,7 +193,9 @@ We'll next configure the "Default Origin Servers".
 Exercise 3: Configure WAF Policy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Under the *Security Configuration* section 
+#. Under the *Security Configuration* section
+
+#. Leave the Service Policies as "Apply Namespace Service Policies" (default) and the Bot Defense Config will be covered in a seperate lab.
 
 #. Enter the following variables:
 
@@ -203,6 +205,9 @@ Exercise 3: Configure WAF Policy
     Select Web Application Firewall (WAF) Config  App Firewall
     App Firewall                                  blocking-app-firewall
     ============================================= =====================
+
+.. image:: ../_static/lb-security-configuration.png
+  :width: 50%
 
 #. Click "*Save and Exit* to create the HTTP Load Balancer".
 
