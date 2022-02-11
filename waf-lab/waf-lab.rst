@@ -13,7 +13,7 @@ This initial Origin Pool will use the Public DNS record of our target webserver
 to locate the IP address of the Origin Pool members.  This is an example of using 
 the Public Internet to route traffic to our services.
 
-    .. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5DC Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5DCP WAF.
+    .. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5 Distributed Cloud Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5 Distributed Cloud WAF. F5 Distributed Cloud WAF can also protect an existing customer application that is located for instance on-premises, private or public Cloud whith similar configuration steps. 
 
 Create Public Origin Pool
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,7 +143,7 @@ We will create a blocking WAF policy.
 
     .. image:: ../_static/blocking-app-firewall-policy.png
 
-#. Click the *Save and Exit* button to create the policy
+#. Leave the *Detection Settings* as Default and Click the *Save and Exit* button to create the policy
 
 
 
@@ -193,7 +193,9 @@ We'll next configure the "Default Origin Servers".
 Exercise 3: Configure WAF Policy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Under the *Security Configuration* section 
+#. Under the *Security Configuration* section
+
+#. Leave the Service Policies as "Apply Namespace Service Policies" (default) and the Bot Defense Config will be covered in a seperate lab.
 
 #. Enter the following variables:
 
@@ -203,6 +205,9 @@ Exercise 3: Configure WAF Policy
     Select Web Application Firewall (WAF) Config  App Firewall
     App Firewall                                  blocking-app-firewall
     ============================================= =====================
+
+    .. image:: ../_static/lb-security-configuration.png
+
 
 #. Click "*Save and Exit* to create the HTTP Load Balancer".
 
