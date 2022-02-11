@@ -92,7 +92,7 @@ Next: |deploy-app|
 
 .. |deploy-app| raw:: html
 
-            <a href="https://github.com/f5devcentral/f5-waap/tree/main/step-1-signup-deploy/deployApp.rst" target="_blank">Deploy Hipster App</a>
+            <a href="https://github.com/f5devcentral/f5-waap/tree/main/step-1-signup-deploy/deployApp.rst" target="_blank">Deploy F5XC Microservices Demo App</a>
 
 
 .. |f5dc| raw:: html

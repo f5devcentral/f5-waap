@@ -1,7 +1,7 @@
 .. _waf_lab:
 
-Secure the Hipster App
-######################
+Secure the F5XC Microservices Demo App
+######################################
 
 Create Origin Pools
 ===================
@@ -13,7 +13,7 @@ This initial Origin Pool will use the Public DNS record of our target webserver
 to locate the IP address of the Origin Pool members.  This is an example of using 
 the Public Internet to route traffic to our services.
 
-    .. note:: Deployed Hipster App exposed a frontend microservice using specified domain delegated to F5 Distributed Cloud Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5 Distributed Cloud WAF. F5 Distributed Cloud WAF can also protect an existing customer application that is located for instance on-premises, private or public Cloud whith similar configuration steps. 
+    .. note:: Deployed F5XC Microservices Demo App exposed a frontend microservice using specified domain delegated to F5 Distributed Cloud Platform. The app can be protected by attaching a WAF object to an existing LB however in the interest of this lab we will execute through the process of creating an LB and protecting it with F5 Distributed Cloud WAF. F5 Distributed Cloud WAF can also protect an existing customer application that is located for instance on-premises, private or public Cloud whith similar configuration steps. 
 
 Create Public Origin Pool
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -154,11 +154,11 @@ We will create a blocking WAF policy.
 
 
 Creating HTTP Load Balancer on F5 Distributed Cloud Platform Regional Edge
-=====================================================
+==========================================================================
 
 In this exercise we will be creating a "Global VIP" that will exist on the F5 Distributed Cloud Platform Global Network.
 
-It will protect a public resource that points to the Hipster App frontend origin.
+It will protect a public resource that points to the F5XC Microservices Demo App frontend origin.
 
 
 
@@ -217,22 +217,21 @@ Exercise 3: Configure WAF Policy
 
 #. Click "*Save and Exit* to create the HTTP Load Balancer".
 
-Once the HTTP Load Balancer has been deployed, you should now be able to go to the CNAME that has been generated. 
-Your FQDN should follow the format of [unique name].[supplied domain name for your tenant].
+Once the HTTP Load Balancer has been deployed, you should now be able to go to the "ves.io" CNAME that has been generated. 
 
-.. note::  "ves.io" name.
+    .. note::  A CNAME record for the subdomain of choice be created in DNS provider to reach the LB using subdomain URL. For the purpose of this lab this step is optional.
 
 Exercise 4: Verify Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The public demo app should look like the following:
+The F5XC Microservices Demo App should look like the following:
 
 .. image:: ../_static/screenshot-global-vip-public.png
   :width: 50%
 
 In this topology we are sending traffic to an AnyCast IP that is hosted in F5 Distributed Cloud Platform's Regional Edge.
 
-We then connect to the AWS resource via it's Public IP address.  
+We then connect to the Origin via it's Public DNS name (exposed by the LB in different namespace)
 
 Try adding the following to the URL "/?cat%20/etc/passwd".
 
@@ -247,7 +246,7 @@ Exercise 5: Performance and Security
 
 We can view details of successful requests and blocks by navigating to "Apps & APIs"
 
-#. Click on "Apps & APIs"->"Performance" and click on your "global" Load Balancer (bottom right)
+#. Click on ``Apps & APIs`` -> ``Performance`` and click on your "global" Load Balancer (bottom right)
 
    .. image:: ../_static/performance-overview.png
        :width: 50%
@@ -264,7 +263,7 @@ We can view details of successful requests and blocks by navigating to "Apps & A
    .. image:: ../_static/screenshot-global-vip-public-requests.png
        :width: 50%
 
-#. Click on "Apps & APIs"->"Security" and click on your "global" Load Balancer (bottom right)
+#. Click on ``Apps & APIs`` -> ``Security`` and click on your "global" Load Balancer (bottom right)
 #. Click on "Security Events"
    You will be able to see details of the security events.
 
@@ -283,14 +282,14 @@ Optional Videos you can watch if you get stuck
 
 #. .. raw:: html
    
-  <a href="https://player.vimeo.com/video/420386926?h=825a452739" target="_blank">Step 1</a>
+    <a href="https://player.vimeo.com/video/420386926?h=825a452739" target="_blank">Step One</a>
 
 #. .. raw:: html
 
-    <a href="https://player.vimeo.com/video/420389494?h=8fdd942550" target="_blank">Step 2</a>
+    <a href="https://player.vimeo.com/video/420389494?h=8fdd942550" target="_blank">Step Two</a>
 
 #. .. raw:: html
 
-    <a href="https://player.vimeo.com/video/420391402?h=f2fcc22c33" target="_blank">Step 3</a>
+    <a href="https://player.vimeo.com/video/420391402?h=f2fcc22c33" target="_blank">Step Three</a>
 
 
