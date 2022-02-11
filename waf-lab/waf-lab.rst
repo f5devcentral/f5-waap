@@ -227,7 +227,7 @@ Verify Configuration
 The F5XC Microservices Demo App should look like the following:
 
 .. image:: ../_static/screenshot-global-vip-public.png
-  :width: 50%
+  :width: 70%
 
 In this topology we are sending traffic to an AnyCast IP that is hosted in F5 Distributed Cloud Platform's Regional Edge.
 
@@ -238,6 +238,7 @@ Try adding the following to the URL "/?cat%20/etc/passwd".
 You should see a block page.
 
 .. image:: ../_static/screenshot-global-vip-public-cat-etc-passwd.png
+  :width: 70%
 
 Performance and Security 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -249,29 +250,30 @@ We can view details of successful requests and blocks by navigating to "Apps & A
 #. Click on ``Apps & APIs`` -> ``Security`` and click on your "global" Load Balancer (bottom right)
 
    .. image:: ../_static/security-overview.png
-       :width: 50%
+       :width: 70%
 
    You will see various chicklets showing "Top Attack Types", "Top Signatures Hit", "Security Events by Location" etc.
 
    .. image:: ../_static/screenshot-global-vip-security-dashboard.png
-       :width: 50%
+       :width: 70%
 
 #. Click on "Requests" in the upper page navigation
 
    You should be able to view logs for individual requests.
 
    .. image:: ../_static/screenshot-global-vip-public-requests.png
-       :width: 50%
+       :width: 70%
 
 #. Click on "Security Events"
    You will be able to see details of the security events.
 
    .. image:: ../_static/screenshot-global-vip-public-security-events.png
+       :width: 70%   
 
    Clicking on the arrow to the left of a security event will expand the details.
 
    .. image:: ../_static/screenshot-global-vip-public-security-events-details.png
-       :width: 50%
+       :width: 70%
 
 
 
