@@ -206,8 +206,8 @@ Exercise 3: Configure WAF Policy
     App Firewall                                  blocking-app-firewall
     ============================================= =====================
 
-.. image:: ../_static/lb-security-configuration.png
-  :width: 50%
+    .. image:: ../_static/lb-security-configuration.png
+    :width: 50%
 
 #. Click "*Save and Exit* to create the HTTP Load Balancer".
 
