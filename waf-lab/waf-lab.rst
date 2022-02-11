@@ -177,12 +177,12 @@ HTTP Load Balancer Configuration
     Name                              global
     Domains                           <yourName>.f5demos.com
     Select type of Load Balancer      HTTP
-    Automatically Manage DNS Records  Yes/Check 
+    Automatically Manage DNS Records  No/Unchecked 
     ================================= =====
 
     |lb-basic|
 
-Exercise 2: Configure Default Origin Server
+Configure Default Origin Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We'll next configure the "Default Origin Servers". 
     
@@ -196,7 +196,7 @@ We'll next configure the "Default Origin Servers".
 
 #. Notice that in the "VIP Configuration" section *Advertise On Internet* has been selected by default.
 
-Exercise 3: Configure WAF Policy
+Configure WAF Policy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Under the *Security Configuration* section
@@ -221,7 +221,7 @@ Once the HTTP Load Balancer has been deployed, you should now be able to go to t
 
     .. note::  A CNAME record for the subdomain of choice be created in DNS provider to reach the LB using subdomain URL. For the purpose of this lab this step is optional.
 
-Exercise 4: Verify Configuration
+Verify Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The F5XC Microservices Demo App should look like the following:
@@ -239,21 +239,21 @@ You should see a block page.
 
 .. image:: ../_static/screenshot-global-vip-public-cat-etc-passwd.png
 
-Exercise 5: Performance and Security 
+Performance and Security 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Start in F5DC Console and switch to the "Web App & API Protection" context. [You should already be here from previous lab]
 
 We can view details of successful requests and blocks by navigating to "Apps & APIs"
 
-#. Click on ``Apps & APIs`` -> ``Performance`` and click on your "global" Load Balancer (bottom right)
+#. Click on ``Apps & APIs`` -> ``Security`` and click on your "global" Load Balancer (bottom right)
 
-   .. image:: ../_static/performance-overview.png
+   .. image:: ../_static/security-overview.png
        :width: 50%
 
-   You will see a  health score of your application as well as end to end latency of the connection.
+   You will see various chicklets showing "Top Attack Types", "Top Signatures Hit", "Security Events by Location" etc.
 
-   .. image:: ../_static/screenshot-global-vip-performance-dashboard.png
+   .. image:: ../_static/screenshot-global-vip-security-dashboard.png
        :width: 50%
 
 #. Click on "Requests" in the upper page navigation
@@ -263,7 +263,6 @@ We can view details of successful requests and blocks by navigating to "Apps & A
    .. image:: ../_static/screenshot-global-vip-public-requests.png
        :width: 50%
 
-#. Click on ``Apps & APIs`` -> ``Security`` and click on your "global" Load Balancer (bottom right)
 #. Click on "Security Events"
    You will be able to see details of the security events.
 

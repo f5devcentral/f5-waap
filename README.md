@@ -13,7 +13,7 @@ https://www.volterra.io/docs/quick-start/web-app-security-performance
 
 WAF microlab guides the user through the process of adding a LB object as well as application firewall to a previously deployed App in the tenant.
 
-- For those tenants that don't have a Hipster App deployed, start with [Sign up and Deploy Hipster App](step-1-signup-deploy/voltConsole.rst).
+- For those tenants that don't have a F5XC Microservices Demo App deployed, start with [Sign up and Deploy F5XC Microservices Demo App](step-1-signup-deploy/voltConsole.rst).
 - Otherwise to proceed with WAF microlab, navigate to [WAF Lab](waf-lab/waf-lab.rst)
 
 Bot microlab uses the Airline App which can be deployed ``here``
