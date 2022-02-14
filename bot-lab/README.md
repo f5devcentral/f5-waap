@@ -6,7 +6,7 @@ This capability has been pre-provisioned for all F5 sales tenants.
 
 Please contact your F5 Sales Engineer/Account Manager for more information.
 
-Start by navigating to [Sign Up](../step-1-signup-deploy/voltConsole.rst)
+Start by navigating to [Start with Bot Lab](startHere.rst)
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
