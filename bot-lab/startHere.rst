@@ -88,12 +88,39 @@ Like many online web channels, F5  airlines has many functions that a bad actor 
 
 We will be using the F5 Distributed Cloud Bot Protect service to protect the F5 airlines website.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+Lab 1: Logging into F5 XC Console
+=================================
 
-   lab1/index
-   lab2/index
-   lab3/index
-   lab4/index
-   lab5/index
+During the first lab you will sign up for and subscribe to F5XC Platform
+
+Lab 2: Exploiting automated threats against F5 Airlines
+=======================================================
+
+During this lab you will be running automated attacks against the F5 Airline web presence in order to understand the tactics and techniques leveraged by advesaries.
+
+We will be using the F5 Automation Lab UDF image to exploit the following scenarios:
+
+- Credential Stuffing (OAT-008_) attack against the F5 airlines login form - Using automation to validate a list of stolen credentials found on the darknet attempting to identify users who have used the same username and password on the F5 Airlines web portal - with the intention of stealing frequent flyer points.
+- Card Cracking (OAT-010_) attack against the F5 airline credit card portal - Using automation to validate a list of stolen credit card numbers by attempting to process a very small transaction with each.
+- Scraping (OAT-011_) attack against the F5 airline flight seasrch interface - Using automation to scrape flight pricing.
+
+Lab 3: Protecting F5 Airlines using F5 Distributed Cloud Bot Protect 
+====================================================================
+
+In this lab we will configure F5 XC Bot Protect to protect the F5 Airlines web application backend (https://airline-backend.f5se.com)
+
+Lab 4: Attempt to use automation tools againt the protected website
+===================================================================
+
+This lab will explore the use of some of the automation tools like Selenium
+
+Lab 5: Review F5 XC Bot Protect Reporting
+=========================================
+
+F5XC Bot Protect reporting is explored in this lab
+
+Next: |signup|
+
+.. |signup| raw:: html
+
+            <a href="https://github.com/f5devcentral/f5-waap/blob/main/step-1-signup-deploy/voltConsole.rst" target="_blank">Lab 1: Sign Up for F5XC Platform</a>
