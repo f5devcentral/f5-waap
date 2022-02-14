@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<head>
+  
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PPZPQ6');</script>
+  <!-- End Google Tag Manager -->
+    <title>Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect</title>
+  
+
+  <meta charset="utf-8">
+  <!-- Twitter Bootstrap viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- F5 metadata -->
+  <meta name="title" content="Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect"/>
+  <meta name="product" content="F5 Distributed Cloud Bot Protect 101"/>
+  <meta name="version" content=""/>
+  <meta name="updated_date"  content="None"/>
+  <meta name="archived" content="Archived documents excluded"/>
+  <meta name="doc_type" content="Manual"/>
+  <meta name="lifecycle" content="release"/>
+  <meta name="F5 Distributed Cloud Bot Protect 101" content=""/>
+
+
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+
+  
+  <link href="https://cdn.f5.com/favicon.ico" rel="icon">
+
+</head>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect &#8212; F5 Distributed Cloud Bot Protect 101  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/f5.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/f5-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/21fb8a09c3.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lab 4: Attempt to use automation tools againt the protected website" href="../lab4/index.html" />
+    <link rel="prev" title="Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines" href="lbsetup.html" />
+
+  
+    
+
+  
+  </head><body>
+  <div id="clouddocs-header"></div>
+
+    <div id="dismiss">
+      <button type="button" class="btn btn-info navbar-btn site-hidden">
+        <i class="fa fa-align-justify"></i>
+      </button>
+    </div>
+    <div id="sidebar" class="section-nav">
+      
+      <!--  version selector ------------------>
+      <div id="version_selector_wrapper">
+      </div>
+      <nav class="nav-sidebartoc">
+
+        
+         <h5>F5 Distributed Cloud Bot Protect 101  </h5>
+        
+<div id="searchbox" role="search">
+  <form class="search" action="../search.html" method="get">
+    <input type="text" class="search" name="q" placeholder=" Search..." />
+    <button type="submit" class="btn btn-info navbar-btn"><i class="fa fa-search"></i></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        <hr>
+        <span class="nav-sidebartoc">
+            <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../lab1/index.html">Lab 1: Logging into F5 XC Console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lab2/index.html">Lab 2: Exploiting automated threats against F5 Airlines</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Lab 3: Protecting F5 Airlines using F5 Distributed Cloud Bot Protect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lab4/index.html">Lab 4: Attempt to use automation tools againt the protected website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lab5/index.html">Lab 5: Review F5 XC Bot Protect Reporting</a></li>
+</ul>
+
+        </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
+<hr>
+  <span class="nav-sidebartoc">
+ <!-- insert content here -->
+  </span>
+      </nav>
+    </div>
+
+
+    <div id="right-sidebar">
+      <h7 style="font-weight:normal">On this page:</h7>
+      <nav class="nav-sidebartoc">
+        <span class="nav-sidebartoc">
+            <ul>
+<li><a class="reference internal" href="#">Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect</a><ul>
+<li><a class="reference internal" href="#lab-3-part-2-exercise-1-get-traffic-flowing-seting-up-f5-xc-bot-protect">Lab 3 - Part 2 - Exercise 1: Get traffic flowing: Seting up F5 XC Bot Protect</a></li>
+</ul>
+</li>
+</ul>
+
+         </span>
+      </nav>
+    </div>
+
+
+
+
+
+  
+  <div class="main active" id="content" >
+    <article class="docs-container site-article-inner">
+            <nav class="site-breadcrumb-nav site-nav">
+          <ul class="site-breadcrumb-list">
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="/">CloudDocs Home</a> &gt; <a href="../index.html">F5 Distributed Cloud Bot Protect 101 </a> &gt; Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect</li>
+          </ul>
+      </nav>
+      
+      
+
+
+    <!--a title="Export PDF" id="export-pdf" class="btn btn btn-link pull-right">View PDF</a-->
+    <button type="button" id="export-pdf" class="btn btn-link right">PDF</button>
+
+
+    
+     
+         <div class="sidebar" id="version-warning" style="display: none;">
+           <p class="first sidebar-title">
+           <span class="icon fa fa-info-circle fa-lg"></span> Version notice:</p>
+           <p class="last" id="currentVersion"></p>
+          </div>
+
+
+     <div role="main">
+        
+  <section id="lab-3-part-2-setting-up-f5-distributed-cloud-bot-protect">
+<h1>Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect<a class="headerlink" href="#lab-3-part-2-setting-up-f5-distributed-cloud-bot-protect" title="Permalink to this headline">¶</a></h1>
+<p>Now that we’ve got traffic for our application flowing via F5 Distributed Cloud - we can now add the F5 XC Bot Service to our load balancer configuration</p>
+<ul class="simple">
+<li><p>Note: F5 DX provides both basic, signature based bot protection as part of the App Firewall configuration object and advanced bot protection as part of the load balancer configuration. For this lab we will be configuring advanced bot protection - which is a sub object of the load balancer configuration.</p></li>
+</ul>
+<section id="lab-3-part-2-exercise-1-get-traffic-flowing-seting-up-f5-xc-bot-protect">
+<h2>Lab 3 - Part 2 - Exercise 1: Get traffic flowing: Seting up F5 XC Bot Protect<a class="headerlink" href="#lab-3-part-2-exercise-1-get-traffic-flowing-seting-up-f5-xc-bot-protect" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Start in F5 Distributed Cloud Console and find the “Web App &amp; API Protection” service from the services drop down.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup1.png" src="../_images/lbsetup1.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Navigate to Mange -&gt; Load Balancers -&gt; HTTP Load Balancers</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup7.png" src="../_images/lbsetup7.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Identify the “airline” HTTP load balancer - From the actions column click on the dropdown and selet “Manage Configuration”</p></li>
+<li><p>Click “Edit Configuration” to open the configuration editor.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup1.png" src="../_images/botsetup1.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>F5 XC Bot Protect is configured under “Security Configuration”</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup2.png" src="../_images/botsetup2.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>From the “Bot Defense Config” section select “Specify Bot Defense Configuration” from the dropdown.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup3.png" src="../_images/botsetup3.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>From the “Bot Defense Regional Endpoint” dropdown select the region that is closest to where the origin resources to be protected are hosted - In this case the origin is hosted in the US - So selet “US”</p></li>
+<li><p>Select “Configure” for “Bot Defense Policy” - this is where we can configure the location that javascript is injected from and the sensetive application flow paths to be protected.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup4.png" src="../_images/botsetup4.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Under “App Endpoint Type” - Click Configure</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup5.png" src="../_images/botsetup5.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Add Item” to add an endpoint to be protected</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup6.png" src="../_images/botsetup6.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Name the application endpoint “login”</p></li>
+<li><p>Select “POST” as the HTTP method</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Note: What we are configuring is what endpoints should be sent to the F5 Distributed Cloud Bot Protect service backend - Requests need to be sent to the backend by the browser along with the telemetary collected by the javascript executing in the client. As a result - directing GET/PUT/ANY endpoints to the backend will fail. This will be resolved in a forthcoming release.</p></li>
+</ul>
+<img alt="../_images/botsetup7.png" src="../_images/botsetup7.png" />
+<ol class="arabic simple">
+<li><ul class="simple">
+<li><p>In this case we want to protect the login form (/user/login) - enter this into the prefix match</p></li>
+</ul>
+</li>
+<li><p>Additionally we want this configuration to block requests that are identified as bots - Select “Block” from the bot mitigation action dropdown.</p></li>
+<li><p>Click Add Item to add this path to be protected.</p></li>
+</ol>
+<img alt="../_images/botsetup8.png" src="../_images/botsetup8.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click Apply to save the protected endpoint definitions</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup9.png" src="../_images/botsetup9.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Review the Javascript insertion settings - This will configure the javascript path name and the relevant place within the DOM to insert the F5 XC Bot Protect javascript.</p></li>
+<li><p>Click Apply to apply the F5 XC Bot Protect settings</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/botsetup10.png" src="../_images/botsetup10.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Save and Exit” to save the LB configuration with the bot protect capability enabled.</p></li>
+</ol>
+</section>
+</section>
+
+
+     </div>
+    
+     <div class="row next-prev-btn-row">
+       <div class="col-lg-12">
+       
+        <a href="lbsetup.html" title="Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines" accesskey="p" class="btn btn-primary left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+       
+       
+          <a href="../lab4/index.html" title="Lab 4: Attempt to use automation tools againt the protected website" accesskey="n" class="btn btn-primary right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+       
+     </div>
+     </div>
+    
+
+    </article>
+  </div>
+
+</div>
+
+
+  <div id="clouddocs-footer"></div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="../_static/js/index.js"></script>
+  <script src="../_static/js/bootstrap.min.js"></script>
+  <script src="../_static/js/clouddocs.js"></script>
+  <script src="../_static/js/jquery.appear.js"></script>
+  <script src="../_static/js/printThis.js"></script>
+  </body>
+</html>
