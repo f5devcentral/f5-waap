@@ -88,11 +88,19 @@ F5 customers
    .. image:: ../_static/volterra_create_ns.png
 
 
-Next: |deploy-app|
+Next: **For WAF lab:** |deploy-app| 
 
 .. |deploy-app| raw:: html
 
             <a href="https://github.com/f5devcentral/f5-waap/tree/main/step-1-signup-deploy/deployApp.rst" target="_blank">Deploy F5XC Microservices Demo App</a>
+
+Next: **For Bot Protect lab:** |bot-lab2| 
+
+.. |bot-lab2| raw:: html
+
+            <a href="https://github.com/f5devcentral/f5-waap/tree/main/bot-lab/lab2.rst" target="_blank">Login to the Unified Demo Framework</a>
+
+
 
 
 .. |f5dc| raw:: html
