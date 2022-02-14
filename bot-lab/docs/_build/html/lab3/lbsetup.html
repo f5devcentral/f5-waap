@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<head>
+  
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PPZPQ6');</script>
+  <!-- End Google Tag Manager -->
+    <title>Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines</title>
+  
+
+  <meta charset="utf-8">
+  <!-- Twitter Bootstrap viewport setting -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- F5 metadata -->
+  <meta name="title" content="Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines"/>
+  <meta name="product" content="F5 Distributed Cloud Bot Protect 101"/>
+  <meta name="version" content=""/>
+  <meta name="updated_date"  content="None"/>
+  <meta name="archived" content="Archived documents excluded"/>
+  <meta name="doc_type" content="Manual"/>
+  <meta name="lifecycle" content="release"/>
+  <meta name="F5 Distributed Cloud Bot Protect 101" content=""/>
+
+
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+
+  
+  <link href="https://cdn.f5.com/favicon.ico" rel="icon">
+
+</head>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines &#8212; F5 Distributed Cloud Bot Protect 101  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/f5.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/f5-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/21fb8a09c3.css" type="text/css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect" href="botsetup.html" />
+    <link rel="prev" title="Lab 3: Protecting F5 Airlines using F5 Distributed Cloud Bot Protect" href="index.html" />
+
+  
+    
+
+  
+  </head><body>
+  <div id="clouddocs-header"></div>
+
+    <div id="dismiss">
+      <button type="button" class="btn btn-info navbar-btn site-hidden">
+        <i class="fa fa-align-justify"></i>
+      </button>
+    </div>
+    <div id="sidebar" class="section-nav">
+      
+      <!--  version selector ------------------>
+      <div id="version_selector_wrapper">
+      </div>
+      <nav class="nav-sidebartoc">
+
+        
+         <h5>F5 Distributed Cloud Bot Protect 101  </h5>
+        
+<div id="searchbox" role="search">
+  <form class="search" action="../search.html" method="get">
+    <input type="text" class="search" name="q" placeholder=" Search..." />
+    <button type="submit" class="btn btn-info navbar-btn"><i class="fa fa-search"></i></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        <hr>
+        <span class="nav-sidebartoc">
+            <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../lab1/index.html">Lab 1: Logging into F5 XC Console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lab2/index.html">Lab 2: Exploiting automated threats against F5 Airlines</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Lab 3: Protecting F5 Airlines using F5 Distributed Cloud Bot Protect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lab4/index.html">Lab 4: Attempt to use automation tools againt the protected website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lab5/index.html">Lab 5: Review F5 XC Bot Protect Reporting</a></li>
+</ul>
+
+        </span><!-- Use this file to add extra links to the bottom of the ToC sidebar -->
+<hr>
+  <span class="nav-sidebartoc">
+ <!-- insert content here -->
+  </span>
+      </nav>
+    </div>
+
+
+    <div id="right-sidebar">
+      <h7 style="font-weight:normal">On this page:</h7>
+      <nav class="nav-sidebartoc">
+        <span class="nav-sidebartoc">
+            <ul>
+<li><a class="reference internal" href="#">Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines</a><ul>
+<li><a class="reference internal" href="#lab-3-part-1-exercise-1-get-traffic-flowing-creating-an-origin-pool">Lab 3 - Part 1 - Exercise 1: Get traffic flowing: Creating an origin pool</a></li>
+<li><a class="reference internal" href="#lab-3-part-1-exercise-2-getting-traffic-flowing-creating-a-load-balancer">Lab 3 - Part 1 - Exercise 2: Getting traffic flowing: Creating a Load Balancer</a></li>
+<li><a class="reference internal" href="#lab-3-part-1-exercise-3-getting-traffic-flowing-check-that-you-can-reach-the-airline-site-via-the-f5-distributed-cloud">Lab 3 - Part 1 - Exercise 3: Getting traffic flowing: Check that you can reach the airline site via the F5 distributed cloud</a></li>
+</ul>
+</li>
+</ul>
+
+         </span>
+      </nav>
+    </div>
+
+
+
+
+
+  
+  <div class="main active" id="content" >
+    <article class="docs-container site-article-inner">
+            <nav class="site-breadcrumb-nav site-nav">
+          <ul class="site-breadcrumb-list">
+            <li class="breadcrumb-item"><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn site-hidden"><i class="fa fa-align-justify"></i></button>&#x20 <a href="/">CloudDocs Home</a> &gt; <a href="../index.html">F5 Distributed Cloud Bot Protect 101 </a> &gt; Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines</li>
+          </ul>
+      </nav>
+      
+      
+
+
+    <!--a title="Export PDF" id="export-pdf" class="btn btn btn-link pull-right">View PDF</a-->
+    <button type="button" id="export-pdf" class="btn btn-link right">PDF</button>
+
+
+    
+     
+         <div class="sidebar" id="version-warning" style="display: none;">
+           <p class="first sidebar-title">
+           <span class="icon fa fa-info-circle fa-lg"></span> Version notice:</p>
+           <p class="last" id="currentVersion"></p>
+          </div>
+
+
+     <div role="main">
+        
+  <section id="lab-3-part-1-running-a-credential-stuffing-attack-against-f5-airlines">
+<h1>Lab 3 - Part 1 - Running a credential stuffing attack against F5 airlines<a class="headerlink" href="#lab-3-part-1-running-a-credential-stuffing-attack-against-f5-airlines" title="Permalink to this headline">¶</a></h1>
+<p>As a dependancy for configuring bot protection for the F5 airlines web presence we must first configure F5 Distributed cloud to be able to provide services for F5 airlines. This requires the following configuration:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You have logged into F5 XC console (lab1)</p></li>
+<li><p>An origin pool - Origin pools specify where the origin resources to be protected are located. In this case we’ll be protecting <a class="reference external" href="https://airline-backend.f5se.com/">https://airline-backend.f5se.com/</a></p></li>
+<li><p>A load balancer - F5 distributed cloud bot protection capabilities are applied as part of the load balancer profile.</p></li>
+</ul>
+</div></blockquote>
+<section id="lab-3-part-1-exercise-1-get-traffic-flowing-creating-an-origin-pool">
+<h2>Lab 3 - Part 1 - Exercise 1: Get traffic flowing: Creating an origin pool<a class="headerlink" href="#lab-3-part-1-exercise-1-get-traffic-flowing-creating-an-origin-pool" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Log into F5 Distributed Cloud Console (as per lab 1)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Start in F5 Distributed Cloud Console and find the “Web App &amp; API Protection” service from the services drop down.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup1.png" src="../_images/lbsetup1.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Navigate to Manage -&gt; Load Balancers -&gt; Origin Pools</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup2.png" src="../_images/lbsetup2.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Add Origin Pool”</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup3.png" src="../_images/lbsetup3.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Name the pool “airline-origin”</p></li>
+<li><p>Under “Orgin Servers” click “Add Item”</p></li>
+<li><p>Select “Public DNS Name of Origin Serer” - in this case we will be communicating to the origin based on it’s DNS name over the internet.</p></li>
+<li><p>Enter “airline-backend.f5se.com” into the DNS name</p></li>
+<li><p>Click “Add Item” to save the origin server defintiion.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup4.png" src="../_images/lbsetup4.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Under TLS configuration - Select “TLS” - as communication between F5 distributed cloud and the origin will be secured using TLS.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup5.png" src="../_images/lbsetup5.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Save and Exit” to save the origin pool</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup6.png" src="../_images/lbsetup6.png" />
+</div></blockquote>
+</section>
+<section id="lab-3-part-1-exercise-2-getting-traffic-flowing-creating-a-load-balancer">
+<h2>Lab 3 - Part 1 - Exercise 2: Getting traffic flowing: Creating a Load Balancer<a class="headerlink" href="#lab-3-part-1-exercise-2-getting-traffic-flowing-creating-a-load-balancer" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Start in F5 Distributed Cloud Console and find the “Web App &amp; API Protection” service from the services drop down.</p></li>
+<li><p>Navigate to Mange -&gt; Load Balancers -&gt; HTTP Load Balancers</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup7.png" src="../_images/lbsetup7.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Add HTTP load balancer”</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup8.png" src="../_images/lbsetup8.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Name your load balancer “airline”</p></li>
+<li><p>Input “airline.f5demo.com” as the domain</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Note: If you have a DNS sub-domain deligated to F5 Distributed Cloud - you can use this domain. For the purposes of this lab we will access the load balancer using its CNAME.</p></li>
+</ul>
+<img alt="../_images/lbsetup9.png" src="../_images/lbsetup9.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Under “Default Origin Servers” select “Add Item”</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup10.png" src="../_images/lbsetup10.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Select the “airline-origin” origin pool object we recently created from the drop down list</p></li>
+<li><p>Click “Add Item” to save the origin pool association</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup11.png" src="../_images/lbsetup11.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Save and Exit” to save and create the load balancer object.</p></li>
+<li><p>You will now be able to see the “airline” load balancer in the HTTP load balancers list</p></li>
+</ol>
+</section>
+<section id="lab-3-part-1-exercise-3-getting-traffic-flowing-check-that-you-can-reach-the-airline-site-via-the-f5-distributed-cloud">
+<h2>Lab 3 - Part 1 - Exercise 3: Getting traffic flowing: Check that you can reach the airline site via the F5 distributed cloud<a class="headerlink" href="#lab-3-part-1-exercise-3-getting-traffic-flowing-check-that-you-can-reach-the-airline-site-via-the-f5-distributed-cloud" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Start in F5 Distributed Cloud Console and find the “Web App &amp; API Protection” service from the services drop down.</p></li>
+<li><p>Navigate to Mange -&gt; Load Balancers -&gt; HTTP Load Balancers</p></li>
+<li><p>Identify the “airline” HTTP load balancer - Under the DNS info column you will see a CNAME reference which represents the DNS name for the F5 distributed cloud service - Click on the copy value button ()</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup12.png" src="../_images/lbsetup12.png" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Paste the copied CNAME into a web browser. The F5 airlines site should load. These application flows are being processed via the F5 distributed cloud.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../_images/lbsetup13.png" src="../_images/lbsetup13.png" />
+<ol class="arabic simple">
+<li><p>This traffic has been handled by the F5 distributed cloud where application services such as WAF, API Protection and Bot Protection can now be applied.</p></li>
+</ol>
+</div></blockquote>
+</section>
+</section>
+
+
+     </div>
+    
+     <div class="row next-prev-btn-row">
+       <div class="col-lg-12">
+       
+        <a href="index.html" title="Lab 3: Protecting F5 Airlines using F5 Distributed Cloud Bot Protect" accesskey="p" class="btn btn-primary left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+       
+       
+          <a href="botsetup.html" title="Lab 3 - Part 2 - Setting up F5 Distributed Cloud Bot Protect" accesskey="n" class="btn btn-primary right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+       
+     </div>
+     </div>
+    
+
+    </article>
+  </div>
+
+</div>
+
+
+  <div id="clouddocs-footer"></div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="../_static/js/index.js"></script>
+  <script src="../_static/js/bootstrap.min.js"></script>
+  <script src="../_static/js/clouddocs.js"></script>
+  <script src="../_static/js/jquery.appear.js"></script>
+  <script src="../_static/js/printThis.js"></script>
+  </body>
+</html>
