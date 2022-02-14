@@ -203,4 +203,4 @@ Next: |bot-lab4|
 
 .. |bot-lab4| raw:: html
 
-            <a href="https://github.com/f5devcentral/f5-waap/tree/main/bot-lab/lab4.rst" target="_blank">Lab 4: Attempt to use automation tools againt the protected website</a>
+            <a href="https://github.com/f5devcentral/f5-waap/tree/main/bot-lab/lab4.rst" target="_blank">Lab 4: Attempt to use automation tools against the protected website</a>
