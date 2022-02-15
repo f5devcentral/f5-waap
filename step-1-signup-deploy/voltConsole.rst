@@ -4,7 +4,7 @@ Sign-up for F5 WAAP Service
 
 Customers and partners can use self-service sign-up option to create Free/Individual/Teams level tenants. 
 
-#. To sign-up navigate to |f5dc| and click ``Sign up`` 
+#. To sign-up navigate to |f5dc| and click ``Get started`` 
 
    .. image:: ../_static/volterra_io.png
 
@@ -105,4 +105,4 @@ Next: **For Bot Protect lab:** |bot-lab2|
 
 .. |f5dc| raw:: html
 
-            <a href="https://console.ves.volterra.io" target="_blank">F5 Distributed Cloud Platform</a>
+            <a href="https://cloud.f5.com" target="_blank">F5 Distributed Cloud Platform</a>
