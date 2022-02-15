@@ -294,3 +294,4 @@ Optional Videos you can watch if you get stuck
     <a href="https://player.vimeo.com/video/420391402?h=f2fcc22c33" target="_blank">Step Three</a>
 
 
+This completes the F5 XC WAF lab.

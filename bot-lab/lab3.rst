@@ -12,12 +12,12 @@ Note: There are two layers of bot protection available in F5 XC:
 
  - Basic signature based bot protection - configured as part of the App Firewall object.
 
- .. image:: _images/botprotect1.png
+ .. image:: ../_static/botprotect1.png
 
 
  - Advanced Bot Protection - configured as part of the Load Balancer object which includes sophisticated signal collection / capabilities for dealing with advanced/targeted adversaries\
    
- .. image:: _images/botprotect2.png
+ .. image:: ../_static/botprotect2.png
 
 
 For the puprose of today's lab we will be configuring Advanced Bot Protection.
@@ -42,15 +42,15 @@ Lab 3 - Part 1 - Exercise 1: Get traffic flowing: Creating an origin pool
 
 #. Start in F5 Distributed Cloud Console and find the "Web App & API Protection" service from the services drop down.
 
- .. image::  _images/lbsetup1.png
+ .. image::  ../_static/lbsetup1.png
 
 #. Navigate to Manage -> Load Balancers -> Origin Pools
 
- .. image::  _images/lbsetup2.png
+ .. image::  ../_static/lbsetup2.png
 
 #. Click "Add Origin Pool"
 
- .. image::  _images/lbsetup3.png
+ .. image::  ../_static/lbsetup3.png
 
 #. Name the pool "airline-origin"
 
@@ -62,15 +62,15 @@ Lab 3 - Part 1 - Exercise 1: Get traffic flowing: Creating an origin pool
 
 #. Click "Add Item" to save the origin server defintiion.
 
- .. image::  _images/lbsetup4.png
+ .. image::  ../_static/lbsetup4.png
 
 #. Under TLS configuration - Select "TLS" - as communication between F5 distributed cloud and the origin will be secured using TLS.
 
- .. image::  _images/lbsetup5.png
+ .. image::  ../_static/lbsetup5.png
 
 #. Click "Save and Exit" to save the origin pool 
 
- .. image::  _images/lbsetup6.png
+ .. image::  ../_static/lbsetup6.png
 
 
 Lab 3 - Part 1 - Exercise 2: Getting traffic flowing: Creating a Load Balancer
@@ -80,28 +80,28 @@ Lab 3 - Part 1 - Exercise 2: Getting traffic flowing: Creating a Load Balancer
 
 #. Navigate to Mange -> Load Balancers -> HTTP Load Balancers 
 
- .. image::  _images/lbsetup7.png
+ .. image::  ../_static/lbsetup7.png
 
 #. Click "Add HTTP load balancer"
 
- .. image::  _images/lbsetup8.png
+ .. image::  ../_static/lbsetup8.png
 
 #. Name your load balancer "airline"
 
 #. Input "airline.f5demo.com" as the domain
  - Note: If you have a DNS sub-domain deligated to F5 Distributed Cloud - you can use this domain. For the purposes of this lab we will access the load balancer using its CNAME.
 
- .. image::  _images/lbsetup9.png
+ .. image::  ../_static/lbsetup9.png
 
 #. Under "Default Origin Servers" select "Add Item"
 
- .. image::  _images/lbsetup10.png
+ .. image::  ../_static/lbsetup10.png
 
 #. Select the "airline-origin" origin pool object we recently created from the drop down list
 
 #. Click "Add Item" to save the origin pool association
 
- .. image::  _images/lbsetup11.png
+ .. image::  ../_static/lbsetup11.png
 
 #. Click "Save and Exit" to save and create the load balancer object.
 
@@ -118,11 +118,11 @@ Lab 3 - Part 1 - Exercise 3: Getting traffic flowing: Check that you can reach t
 
 #. Identify the "airline" HTTP load balancer - Under the DNS info column you will see a CNAME reference which represents the DNS name for the F5 distributed cloud service - Click on the copy value button ()
 
- .. image::  _images/lbsetup12.png
+ .. image::  ../_static/lbsetup12.png
 
 #. Paste the copied CNAME into a web browser. The F5 airlines site should load. These application flows are being processed via the F5 distributed cloud.
 
- .. image::  _images/lbsetup13.png
+ .. image::  ../_static/lbsetup13.png
 
  #. This traffic has been handled by the F5 distributed cloud where application services such as WAF, API Protection and Bot Protection can now be applied.
 
@@ -140,61 +140,61 @@ Lab 3 - Part 2 - Exercise 1: Get traffic flowing: Seting up F5 XC Bot Protect
 
 #. Start in F5 Distributed Cloud Console and find the "Web App & API Protection" service from the services drop down.
 
- .. image:: _images/lbsetup1.png
+ .. image:: ../_static/lbsetup1.png
 
 #. Navigate to Mange -> Load Balancers -> HTTP Load Balancers
 
- .. image:: _images/lbsetup7.png
+ .. image:: ../_static/lbsetup7.png
 
 #. Identify the "airline" HTTP load balancer - From the actions column click on the dropdown and selet "Manage Configuration"
 
 #. Click "Edit Configuration" to open the configuration editor.
 
- .. image:: _images/botsetup1.png
+ .. image:: ../_static/botsetup1.png
 
 #. F5 XC Bot Protect is configured under "Security Configuration"
 
- .. image:: _images/botsetup2.png
+ .. image:: ../_static/botsetup2.png
 
 #. From the "Bot Defense Config" section select "Specify Bot Defense Configuration" from the dropdown.
 
- .. image:: _images/botsetup3.png
+ .. image:: ../_static/botsetup3.png
 
 #. From the "Bot Defense Regional Endpoint" dropdown select the region that is closest to where the origin resources to be protected are hosted - In this case the origin is hosted in the US - So selet "US"
 
 #. Select "Configure" for "Bot Defense Policy" - this is where we can configure the location that javascript is injected from and the sensetive application flow paths to be protected.
 
- .. image:: _images/botsetup4.png
+ .. image:: ../_static/botsetup4.png
 
 #. Under "App Endpoint Type" - Click Configure
 
- .. image:: _images/botsetup5.png
+ .. image:: ../_static/botsetup5.png
 
 #. Click "Add Item" to add an endpoint to be protected 
 
- .. image:: _images/botsetup6.png
+ .. image:: ../_static/botsetup6.png
 
 #. Name the application endpoint "login"
 
 #. Select "POST" as the HTTP method
  - Note: What we are configuring is what endpoints should be sent to the F5 Distributed Cloud Bot Protect service backend - Requests need to be sent to the backend by the browser along with the telemetary collected by the javascript executing in the client. As a result - directing GET/PUT/ANY endpoints to the backend will fail. This will be resolved in a forthcoming release.
 
- .. image:: _images/botsetup7.png
+ .. image:: ../_static/botsetup7.png
  
  #. - In this case we want to protect the login form (/user/login) - enter this into the prefix match
  #. Additionally we want this configuration to block requests that are identified as bots - Select "Block" from the bot mitigation action dropdown.
  #. Click Add Item to add this path to be protected.
 
- .. image:: _images/botsetup8.png
+ .. image:: ../_static/botsetup8.png
 
 #. Click Apply to save the protected endpoint definitions
 
- .. image:: _images/botsetup9.png
+ .. image:: ../_static/botsetup9.png
 
 #. Review the Javascript insertion settings - This will configure the javascript path name and the relevant place within the DOM to insert the F5 XC Bot Protect javascript. 
 #. Click Apply to apply the F5 XC Bot Protect settings
 
- .. image:: _images/botsetup10.png
+ .. image:: ../_static/botsetup10.png
 
 #. Click "Save and Exit" to save the LB configuration with the bot protect capability enabled.
 
