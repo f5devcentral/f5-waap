@@ -35,20 +35,20 @@ Examples of common automated threats include:
 
 For more information about common automated threats/abuse as a result of bots/automation .. _please refer to the OWASP guide to Automated Threats to Web Applications. https://owasp.org/www-project-automated-threats-to-web-applications/
 
-Advesary Arms Race
+Adversary Arms Race
 ------------------
 
-There are many different techniques that can be utilized to differenciate between a real and legitimate human/customer accessing a web prescence and an advesary leveraging automation to exploit an automated threat class - each with it's own level of efficacy, user impact and friction.
+There are many different techniques that can be utilized to differentiate between a real and legitimate human/customer accessing a web presence and an adversary leveraging automation to exploit an automated threat class - each with its own level of efficacy, user impact and friction.
 
 Some common techniques include:
 
 - Identifying bots using signatures that match the request characteristics of a bot (i.e. Useragent string - This technique can be trivially bypased by an advesary by altering their requests to look like requests from legitimate browsers (changing the useragent to a legtimate browser UA etc)
-- Making users solve a CAPCHA (Capcha's introduce friction for users and are ineffective in that they can be solved in some cases by using OCR, in other cases by integrating with a cacpcha solving services such as 2capcha)
-- Sending a javascript based challenge to the client (Javascript based challenges can vary significantly in efficacy - Advesaries can leverage automation tools with javascript based execution environments (i.e. PhantomJS and Selenium Webdriver) to solve javascript based challenges or break the obfuscation of javascript and reverse engineer a solution to the challenge)
+- Making users solve a CAPTCHA (Captcha's introduce friction for users and are ineffective in that they can be solved in some cases by using OCR, in other cases by integrating with a captcha solving services such as 2captcha)
+- Sending a javascript based challenge to the client (Javascript based challenges can vary significantly in efficacy - Adversaries can leverage automation tools with javascript based execution environments (i.e. PhantomJS and Selenium Webdriver) to solve javascript based challenges or break the obfuscation of javascript and reverse engineer a solution to the challenge)
 
-Based on observed adversary behaviour an arms race exists - There is inherant value that the attacker is looking to extract as a result of their use of automated threat techniques - as a result advesaries quickly adapt and retool as more sophisticated anti-automation techniques are deployed. 
+Based on observed adversary behaviour an arms race exists - There is inherent value that the attacker is looking to extract as a result of their use of automated threat techniques - as a result advesaries quickly adapt and retool as more sophisticated anti-automation techniques are deployed. 
 
-Identifying the most sophisticated advesaries exploiting automated threats is challenging -  F5 Distributed Cloud's Bot Protect capability provides very high efficacy against the most sophisticated advesaries - providing a determanistic (is it a bot or not a bot - not a risk score), low friction (doesnt introduce CAPCHA or other techniques to differenciate humans/bots) and highly effective tactics against advesaries that retool/attempt to defeat the service.
+Identifying the most sophisticated adversaries exploiting automated threats is challenging -  F5 Distributed Cloud's Bot Protect capability provides very high efficacy against the most sophisticated adversaries - providing a deterministic (is it a bot or not a bot - not a risk score), low friction (doesnt introduce CAPCHA or other techniques to differentiate humans/bots) and highly effective tactics against adversaries that retool/attempt to defeat the service.
 
 What we'll learn
 ================
@@ -81,7 +81,7 @@ Like many online web channels, F5  airlines has many functions that a bad actor 
 
 
 - A **login form** - an attacker could use automation to test a large number of credentials using brute force - this is an example of OAT-007 - Credential Cracking - or from a credential leak - This is an example of OAT-008 - Credential Stuffing
-- A **credit card payment gateway** - an attacker could use automation to test a large numbner of stolen credit cards - an example of OAT-010 Card Cracking
+- A **credit card payment gateway** - an attacker could use automation to test a large number of stolen credit cards - an example of OAT-010 Card Cracking
 - A **frequent flyer gift card system** - an attacker could use automation to brute force gift card IDs and PINs - an example of OAT-002 Token Cracking
 - A **flight booking interface** - an attacker could use automation to block/hold all the seats on a flight - an example of OAT-021 Denial of Inventory
 - A **flight search interface** - an attacker (or competitor/unauthorized travel agency) could leverage web scraping to scrape flight pricing to discover reverse engineer utilization.
@@ -96,7 +96,7 @@ During the first lab you will sign up for and subscribe to F5XC Platform
 Lab 2: Exploiting automated threats against F5 Airlines
 =======================================================
 
-During this lab you will be running automated attacks against the F5 Airline web presence in order to understand the tactics and techniques leveraged by advesaries.
+During this lab you will be running automated attacks against the F5 Airline web presence in order to understand the tactics and techniques leveraged by adversaries.
 
 We will be using the F5 Automation Lab UDF image to exploit the following scenarios:
 
@@ -109,7 +109,7 @@ Lab 3: Protecting F5 Airlines using F5 Distributed Cloud Bot Protect
 
 In this lab we will configure F5 XC Bot Protect to protect the F5 Airlines web application backend (https://airline-backend.f5se.com)
 
-Lab 4: Attempt to use automation tools againt the protected website
+Lab 4: Attempt to use automation tools against the protected website
 ===================================================================
 
 This lab will explore the use of some of the automation tools like Selenium

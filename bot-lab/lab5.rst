@@ -11,7 +11,7 @@ Lab 5: Review F5 XC Bot Protect Reporting
 
 #. Click on the airline load balancer to dive deeper into F5 XC Bot Protect reporting for this application.
 
-#. Navigate to the "Bot Defense" tab to view F5 XC Bot Defense reports of bots and automation.
+#. Navigate to the "Bot Defence" tab to view F5 XC Bot Defence reports of bots and automation.
 
  .. image:: ../_static/report3.png
 

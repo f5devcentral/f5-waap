@@ -17,7 +17,7 @@ Lab 2 - Exercise 1: Deploy, start and log into the UDF blueprint
 
 #. Login to UDF https://udf.f5.com using your employee or partner credentials (Speak to your account manager or F5 contact for access)
 
-.. image:: ../_static/udf1.png
+ .. image:: ../_static/udf1.png
 
 #. Navigate to the blueprint and find the "Athena Attacker blueprint" (https://udf.f5.com/b/c069bba3-17fd-4466-843e-f9a90c5255a4#documentation)
 
@@ -47,6 +47,7 @@ In this exercise we will be using OpenBullet 2 to validate a combo list (usernam
 1. To run OpenBullet, double click on the openbullet icon on the desktop of the "Launchpad" windows system as part of the "Athena Attacker Blueprint"
  .. image:: ../_static/credstuff1.png
 
+
 2. After a short time the OpenBullet app wil load 
  .. image:: ../_static/credstuff1.1.png
 
@@ -58,6 +59,7 @@ In this exercise we will be using OpenBullet 2 to validate a combo list (usernam
 
 5. Review the Http request block by clicking on it - Note that it is configured to POST credentials to /user/signin using the form post method.
  .. image:: ../_static/credstuff4.png
+
 
 6. Review the Keycheck block by clicking on it - Note that it is looking for the string "Successfully signed in." in the pagee in order to identify a successful username/password combo.
  .. image:: ../_static/credstuff5.png
@@ -98,17 +100,17 @@ In this exercise we will be using OpenBullet 2 to validate a combo list (usernam
 Lab 2 - Part 2: Exercise 2: Credential Stuffing with Selenium Webdriver
 -----------------------------------------------------------------------
 
-Selenium Webdriver (https://www.selenium.dev/) is a framework for browser automation commonly utilised for creating test automation, but is also often utilised by advesaries who want to defeat simple anti-automation controls that rely on request/UA analysis, javascript based challenges etc.  Selenium WebDriver provides a programatic SDK for interfacing and driving the web browser.
+Selenium Webdriver (https://www.selenium.dev/) is a framework for browser automation commonly utilised for creating test automation, but is also often utilised by adversaries who want to defeat simple anti-automation controls that rely on request/UA analysis, javascript based challenges etc.  Selenium WebDriver provides a programatic SDK for interfacing and driving the web browser.
 
-In this exercise we will be using the python requests library - a simple HTTP client (that doesnt inject javascript) that can be used to generate requests and inspect responses within python3 in order to scrape flight pricing from the F5 airlines web channel.
+In this exercise we will be using the python requests library - a simple HTTP client (that doesn’t run javascript) that can be used to generate requests and inspect responses within python3 in order to scrape flight pricing from the F5 airlines web channel.
 
 1. In the UDF environment, Open the PyCharm python IDE
  .. image:: ../_static/selenium1.png
 
 2. Review the python code - it:
    
- - Initialises the chrome selnium Webdriver
- - Iterates through a CSV file of stolen credentials attempting each username and password combination until it finds a successfull combo.
+ - Initialises the chrome selenium Webdriver
+ - Iterates through a CSV file of stolen credentials attempting each username and password combination until it finds a successful combo.
 
  .. image:: ../_static/selenium2.png
 
