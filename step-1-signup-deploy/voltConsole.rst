@@ -105,4 +105,4 @@ Next: **For Bot Protect lab:** |bot-lab2|
 
 .. |f5dc| raw:: html
 
-            <a href="https://volterra.io" target="_blank">F5 Distributed Cloud Platform</a>
+            <a href="https://console.ves.volterra.io" target="_blank">F5 Distributed Cloud Platform</a>
