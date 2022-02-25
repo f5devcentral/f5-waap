@@ -15,7 +15,7 @@ Distributed Cloud Client-Side Defense has two core components that establish its
 
 JavaScript that captures signals and a machine learning analysis service that processes those signals.
 
-.. image:: ../_static/udf1.png
+.. image:: ../_static/csd-diagram.png
 
 
 
