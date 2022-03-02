@@ -1,26 +1,21 @@
-# f5-waap-labs
-F5 Distributed Cloud Platform WAAP labs
+# F5 Distributed Cloud Client Side Defense Lab 
 
-Watch the F5 WAAP overview before starting with the labs:
+# Prerequisites
+1. An account for F5 Distributed Cloud and a tenant with Client Side Defense add-on capability provisioned.
+2. Base configuration to expose your application on the internet is completed, which means DNS, "Origin Pool", "HTTP load balancer", ... are configured and the application is accessible via the internet.
 
-1. https://vimeo.com/420386926
-2. https://vimeo.com/420389494
-3. https://vimeo.com/420391402
+<br>
 
-Refer to Platform documentation on ``App Security and Performance``
-https://docs.cloud.f5.com/docs/quick-start/web-app-security-performance
+You can sign up for a free account for the F5 Distributed Cloud in case you don't have an account yet by following the [sign up description](https://github.com/f5devcentral/f5-waap/blob/main/step-1-signup-deploy/voltConsole.rst) or just go directly to the [sign up page](https://console.ves.volterra.io/signup/usage_plan).
+<br>
 
+Please contact your F5 Sales Engineer/Account Manager for more information.
 
-WAF microlab guides the user through the process of adding a LB object as well as application firewall to a previously deployed App in the tenant.
+<br>
 
-- For those tenants that don't have a F5XC Microservices Demo App deployed, start with [Sign up and Deploy F5XC Microservices Demo App](step-1-signup-deploy/voltConsole.rst).
-- Otherwise to proceed with WAF microlab, navigate to [WAF Lab](waf-lab/waf-lab.rst)
+Start this lab by navigating to [Client Side Defense Lab](start-csd-intro.rst)
 
-For the Bot Defense lab, please navigate to  [Bot Lab](bot-lab/startHere.rst).
-
-For the Client Side Defense lab, please navigagte to [CSD Lab](csd/README.md).
-
-
+<br>
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
