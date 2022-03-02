@@ -1,12 +1,21 @@
 # F5 Distributed Cloud Client Side Defense Lab 
 
-Prerequities - A F5 XC Org tenant with Client Side Defense add-on capability provisioned.
+# Prerequisites
+1. An account for F5 Distributed Cloud and a tenant with Client Side Defense add-on capability provisioned.
+2. Base configuration to expose your application on the internet is completed, which means DNS, "Origin Pool", "HTTP load balancer", ... are configured and the application is accessible via the internet.
 
-This capability has been pre-provisioned for all F5 sales tenants.
+<br>
 
-Please contact your F5 Sales Engineer/Account Manager for more information and you can also sign up for a free trial https://console.ves.volterra.io/signup/usage_plan
+You can sign up for a free account for the F5 Distributed Cloud in case you don't have an account yet by following the [sign up description](https://github.com/f5devcentral/f5-waap/blob/main/step-1-signup-deploy/voltConsole.rst) or just go directly to the [sign up page](https://console.ves.volterra.io/signup/usage_plan).
+<br>
 
-Start by navigating to [Start with Client Side Defense Lab](startcsdlab.rst)
+Please contact your F5 Sales Engineer/Account Manager for more information.
+
+<br>
+
+Start this lab by navigating to [Client Side Defense Lab](start-csd-intro.rst)
+
+<br>
 
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
