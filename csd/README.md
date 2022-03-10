@@ -1,15 +1,16 @@
-# F5 Distributed Cloud Client Side Defense Lab 
+# F5 Distributed Cloud Client-Side Defense Lab 
 
 # Prerequisites
-1. An account for F5 Distributed Cloud and a tenant with Client Side Defense add-on capability provisioned.
-2. Base configuration to expose your application on the internet is completed, which means DNS, "Origin Pool", "HTTP load balancer", ... are configured and the application is accessible via the internet.
+1. An account for F5 Distributed Cloud and a tenant with Client-Side Defense add-on capability provisioned.
+2. An application which is accessible via the internet and where you can add the JavaScript the website. Alternativeley you can find instructions how to inject the JavaScript for testing purposes with the Chrome browser.
+For *F5 SEs* the JavaScript was already added to the demo application and you can find the detais and login instructions for the f5-sales-demo tenant in the lab. 
 
 <br>
 
 You can sign up for a free account for the F5 Distributed Cloud in case you don't have an account yet by following the [sign up description](https://github.com/f5devcentral/f5-waap/blob/main/step-1-signup-deploy/voltConsole.rst) or just go directly to the [sign up page](https://console.ves.volterra.io/signup/usage_plan).
 <br>
 
-Please contact your F5 Sales Engineer/Account Manager for more information.
+Please contact your F5 Sales Engineer/Account Manager for more information and please send any feedback for this lab to a.vistola@f5.com
 
 <br>
 

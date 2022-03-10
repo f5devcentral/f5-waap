@@ -1,8 +1,10 @@
-Base Configuration of CSD
-===========================
+Manage Suspicious Domains in Client Side Defense
+================================================
 
 Lab 1: Configure CSD and add the JavaScript to the web server
 -------------------------------------------------------------
+
+ .. note:: CSD leverages sampling, which means
 
 1. Login
  
@@ -28,33 +30,16 @@ Lab 1: Configure CSD and add the JavaScript to the web server
 
 |
 
-3. Add the JavaScript to **your** web server
+3. Add the JavaScript to the web server
 
- Click on "Configuration" - "How to Inject JS" and follow step *1 - 3* on the right for adding the JavaScript to **your** web server between the <head> and </head> tags. Step 4 - 5 is explained below.
+ Click on "Configuration" - "How to Inject JS" and follow step *1 - 3* on the right for adding the JavaScript to the web server between the <head> and </head> tags. Step 4 - 5 is explained below.
 
  .. image:: ../_static/csd-script.png
 
-|
-
- After you have added the JavaScript to your web server, continue with step 4 from the screenshot above by adding the domain to protect, in our example f5demos.com.
-
- .. image:: ../_static/csd-domain-protect.png
+ After you have added the JavaScript to the web server, continue with step 4 from the screenshot above with adding the domain to protect, in our example f5demo.com.
  
-|
+ Finally proceed with step 5 from the screenshot  and finally use the 
 
- Finally proceed with step 5 from the screenshot above to test if the JavaScript was added successfully to your web server.
-
- Click on "Test JS Injection" for the domain you want to test. In our example f5demos.com.
-
- .. image:: ../_static/csd-js-test1.png 
-
-|
-
- Enter the URL where you have added the JavaScript to your web server, click "Test JS Injection" and you should see "JS successfully detected". In in our example it is https://shop.sales-demo.f5demos.com.
-
- .. image:: ../_static/csd-js-test2.png
-
-|
 
  .. note:: These 5 steps were done already on the demo-app https://shop.sales-demo.f5demos.com hosted on the F5 Distributed Cloud.
 
@@ -67,17 +52,11 @@ Lab 1: Configure CSD and add the JavaScript to the web server
 
  Start the browser's Dev tools, filter for "oob" and reload the page until you see a similar POST request as below. This indicates that the telemetry data, collected by the JavaScript, are sent to F5.
 
- .. image:: ../_static/csd-filter-oob.png
+  .. image:: ../_static/csd-filter-oob.png
  
-|
 
-5. Configure Logging
 
- F5 XC Client Side Defense configures the "Alert Policy" and the "Alert Receiver" with the email address of the user who enables CSD but can be easily modified afterwards in *"Audit Logs & Alerts"*. Just modify the alert receiver email address accordingly if needed or use a different alert mechanism.
 
- .. image:: ../_static/csd-alert-receiver.png
 
-|
-
- .. image:: ../_static/csd-alert-receiver-details.png
+ .. note:: CSD leverages sampling, which means
 
