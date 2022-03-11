@@ -18,42 +18,6 @@ JavaScript that captures signals and a machine learning analysis service that pr
 .. image:: ../_static/csd-diagram.png
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-For more information about common automated threats/abuse as a result of bots/automation .. _please refer to the OWASP guide to Automated Threats to Web Applications. https://owasp.org/www-project-automated-threats-to-web-applications/
-
-Adversary Arms Race
-------------------
-
-There are many different techniques that can be utilized to differentiate between a real and legitimate human/customer accessing a web presence and an adversary leveraging automation to exploit an automated threat class - each with its own level of efficacy, user impact and friction.
-
-Some common techniques include:
-
-- Identifying bots using signatures that match the request characteristics of a bot (i.e. Useragent string - This technique can be trivially bypased by an advesary by altering their requests to look like requests from legitimate browsers (changing the useragent to a legtimate browser UA etc)
-- Making users solve a CAPTCHA (Captcha's introduce friction for users and are ineffective in that they can be solved in some cases by using OCR, in other cases by integrating with a captcha solving services such as 2captcha)
-- Sending a javascript based challenge to the client (Javascript based challenges can vary significantly in efficacy - Adversaries can leverage automation tools with javascript based execution environments (i.e. PhantomJS and Selenium Webdriver) to solve javascript based challenges or break the obfuscation of javascript and reverse engineer a solution to the challenge)
-
-Based on observed adversary behaviour an arms race exists - There is inherent value that the attacker is looking to extract as a result of their use of automated threat techniques - as a result advesaries quickly adapt and retool as more sophisticated anti-automation techniques are deployed. 
-
-Identifying the most sophisticated adversaries exploiting automated threats is challenging -  F5 Distributed Cloud's Bot Protect capability provides very high efficacy against the most sophisticated adversaries - providing a deterministic (is it a bot or not a bot - not a risk score), low friction (doesnt introduce CAPCHA or other techniques to differentiate humans/bots) and highly effective tactics against adversaries that retool/attempt to defeat the service.
-
 What we'll learn
 ================
 
