@@ -1,7 +1,7 @@
 Base Configuration of CSD
 ===========================
 
-Lab 1: Configure CSD and add the JavaScript to the web server
+Lab 1: Configure CSD and add the JavaScript tag to the web server
 -------------------------------------------------------------
 
 1. Login
