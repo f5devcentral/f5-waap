@@ -13,9 +13,8 @@ Prerequisites
   
 For *F5 SEs* the JavaScript was already added to the demo application and you can find the detais and login instructions for the f5-sales-demo tenant further down in the lab guide. 
 
-You can sign up for a free account for the F5 Distributed Cloud in case you don't have an account yet by following the [sign up description](https://github.com/f5devcentral/f5-waap/blob/main/step-1-signup-deploy/voltConsole.rst) or just go directly to the [sign up page](https://console.ves.volterra.io/signup/usage_plan).
+You can sign up for a free account for the F5 Distributed Cloud in case you don't have an account yet by following the `sign up description <https://github.com/f5devcentral/f5-waap/blob/main/step-1-signup-deploy/voltConsole.rst>`_ or just go directly to the `sign up page <https://console.ves.volterra.io/signup/usage_plan>`_
 
-Please contact your F5 Sales Engineer/Account Manager for more information and please send any feedback for this lab to a.vistola@f5.com
 
 What we'll learn
 ----------------
@@ -36,6 +35,10 @@ During this lab you can use your own F5 Distributed Cloud account and your own a
 
 |
 
+Please contact your F5 Sales Engineer/Account Manager if you need more information and please send any feedback for this lab to a.vistola@f5.com
+
+|
+
 F5 Distributed Cloud Client Side Defense: Prevent Skimming and Formjacking
 --------------------------------------------------------------------------
 Like credit card skimming in the physical world, cybercriminals have developed attacks to take ownership of legitimate websites and install digital skimming to steal credit card numbers, social security numbers, national identity numbers, names, addresses, login credentials, and other personally identifiable information.
@@ -52,4 +55,10 @@ JavaScript that captures signals and a machine learning analysis service that pr
 
 |
 
-**Start lab 1** by navigating to [Client Side Defense Lab](lab1.rst)
+Next: |signup|
+
+.. |signup| raw:: html
+
+            <a href="https://github.com/f5devcentral/f5-waap/blob/main/lab1.rst" target="_blank">Lab 1: Base Configuration of CSD</a>
+
+

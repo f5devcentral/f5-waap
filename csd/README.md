@@ -3,39 +3,6 @@ Please start the lab by navigating to [CSD lab](start-csd-intro.rst)
 
 <br>
 
-Please contact your F5 Sales Engineer/Account Manager for more information and please send any feedback for this lab to a.vistola@f5.com
-
-<br>
-
-# What we'll learn
-
-During this hands-on lab you will learn about the following: 
-
-- How to log into the F5 XC Console
-- High level introduction in the use case of Client Side Defense (CSD)
-- Configure CSD, logging and add the JavaScript to the web server
-- Check if the telemetry data are sent to F5
-- Using the Client Side Defense dashboard to mitigate suspicious domains
-- Show that requests to suspicious domains are blocked
-
-<br> 
-
-## Lab Environment
-
-During this lab you will be using the shared F5XC `f5-sales-public` tenant (the first lab exercise will cover how to access this environment). We will be setting up F5XC Client Side Defense in front of our sales-demo-app web site https://shop.sales-demo.f5demos.com/
-
-<br> 
-
-## Our Demo App - Sales-Demo
-
-In this lab we will be protecting our sales-demo app. - You can explore the website by navigating to https://shop.sales-demo.f5demos.com/
-
-<br> 
-
-**Start the intro** by navigating to [Client Side Defense Lab](start-csd-intro.rst)
-
-<br>
-
 ## Support
 For support, please open a GitHub issue.  Note, the code in this repository is community supported and is not supported by F5 Networks.  For a complete list of supported projects please reference [SUPPORT.md](SUPPORT.md).
 

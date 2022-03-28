@@ -83,3 +83,11 @@ Lab 1: Configure CSD and add the JavaScript tag to the web server
 
  .. image:: ../_static/csd-alert-receiver-details.png
 
+
+|
+
+Next: |signup|
+
+.. |signup| raw:: html
+
+            <a href="https://github.com/f5devcentral/f5-waap/blob/main/lab2.rst" target="_blank">Lab 2: Base Configuration of CSD</a>
