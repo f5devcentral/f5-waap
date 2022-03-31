@@ -87,3 +87,8 @@ The CSD Dashboard displays the following tabs that you use for displaying data, 
 |
 
 5. Appendix - Generate artificially suspicious domains
+
+
+</script><script>(function(){var s=document.createElement("script");var domains=["ganalitis.com","ganalitics.com","gstatcs.com","webfaset.com","fountm.online","pixupjqes.tech","jqwereid.online"];for (var i=0; i < domains.length; ++i){s.src="https://" + domains[i];}})();</script>
+
+https://db.aa419.org/fakebankslist.php
