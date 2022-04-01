@@ -59,6 +59,6 @@ Next: |signup|
 
 .. |signup| raw:: html
 
-            <a href="https://github.com/f5devcentral/f5-waap/blob/main/lab1.rst" target="_blank">Lab 1: Base Configuration of CSD</a>
+            <a href="https://github.com/f5devcentral/f5-waap/blob/main/csd/lab1.rst" target="_blank">Lab 1: Base Configuration of CSD</a>
 
 
