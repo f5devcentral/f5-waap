@@ -163,12 +163,10 @@ Set up local Overrides in Chrome DevTools
 
 |
 
-#. Make your code changes on the right side.
+12. Make your code changes on the right side.
  
  .. image:: ../_static/csd-add-injection-code.png
 
-|
-
-#. **And make sure you save your changes afterwards e.g. with Ctrl+S or Command+S!**
+ **And make sure you save your changes afterwards e.g. with Ctrl+S or Command+S!**
 
 .. note:: You won't see the overwritten code when you click on *view source code* in the page. If you want to check if the overwrite works, you can e.g. modifiy a title or a text on the page to see the changes on the screen.
