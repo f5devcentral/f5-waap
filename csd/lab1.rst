@@ -2,7 +2,7 @@ Base Configuration of CSD
 ===========================
 
 Lab 1: Configure CSD and add the JavaScript tag to the web server
--------------------------------------------------------------
+-----------------------------------------------------------------
 
 1. Login
  
@@ -22,13 +22,21 @@ Lab 1: Configure CSD and add the JavaScript tag to the web server
 
 |
 
- And enable Client-Side Defense. No worries if somebody else from the thenant enabled it already.
+ And enable Client-Side Defense. No worries if another user of the same tenant enabled it already.
 
  .. image:: ../_static/csd-enable.png
 
 |
 
 3. Add the JavaScript tag to **your** web server
+
+
+ .. note:: | For F5 SEs, who don't have a webserver available to add the CSD JavaScript tag:
+    
+     The CSD JavaScript tag was already added, for demo purposes, to the demo-app https://shop.sales-demo.f5demos.com hosted on the F5 Distributed Cloud with the CSD JavaScript tag from the *f5-sales-demo* tenant.
+     Please check this F5 internal channel for the credentials to login to the `f5-sales-demo tenant <https://teams.microsoft.com/l/message/19:45ba7ac2ebb540ecb3b44929aebd7e99@thread.tacv2/1645109960193?tenantId=dd3dfd2f-6a3b-40d1-9be0-bf8327d81c50&groupId=2dc42443-8b46-4694-aa58-defbd3dc8a4b&parentMessageId=1645109960193&teamName=SME-Volterra&channelName=Sales%20Demo%20Tenant%20Ops&createdTime=1645109960193>`_ as a read only user.
+
+|
 
  Click on "Configuration" - "How to Inject JS" and follow step *1 - 3* on the right for adding the JavaScript tag to **your** webpage between the <head> and </head> tags. Step 4 - 5 is explained below.
 
@@ -38,7 +46,7 @@ Lab 1: Configure CSD and add the JavaScript tag to the web server
      
 |
 
- After you have added the JavaScript tag to your web server, continue with step 4 from the screenshot above by adding the domain to protect, in our example f5demos.com.
+ After you have added the JavaScript tag to your web server, continue with step 4 from the screenshot above by adding the domain to protect. In our example f5demos.com.
 
  .. image:: ../_static/csd-domain-protect.png
  
@@ -55,12 +63,6 @@ Lab 1: Configure CSD and add the JavaScript tag to the web server
  Enter the URL where you have added the JavaScript tag to your web server, click "Test JS Injection" and you should see "JS successfully detected". In our example it is https://shop.sales-demo.f5demos.com.
 
  .. image:: ../_static/csd-js-test2.png
-
-|
-
- .. note:: The CSD JavaScript tag was already added for demo purposes to the demo-app https://shop.sales-demo.f5demos.com hosted on the F5 Distributed Cloud with the CSD JavaScript tag from the f5-sales-demo tenant.
-
- Please check this F5 internal channel for the credentials to login to the `f5-sales-demo tenant <https://teams.microsoft.com/l/message/19:45ba7ac2ebb540ecb3b44929aebd7e99@thread.tacv2/1645109960193?tenantId=dd3dfd2f-6a3b-40d1-9be0-bf8327d81c50&groupId=2dc42443-8b46-4694-aa58-defbd3dc8a4b&parentMessageId=1645109960193&teamName=SME-Volterra&channelName=Sales%20Demo%20Tenant%20Ops&createdTime=1645109960193>`_.
 
 |
 
@@ -83,6 +85,11 @@ Lab 1: Configure CSD and add the JavaScript tag to the web server
 
  .. image:: ../_static/csd-alert-receiver-details.png
 
+|
+
+ Example for an alert email
+ 
+ .. image:: ../_static/alert-email.png
 
 |
 
