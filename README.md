@@ -16,7 +16,9 @@ WAF microlab guides the user through the process of adding a LB object as well a
 - For those tenants that don't have a F5XC Microservices Demo App deployed, start with [Sign up and Deploy F5XC Microservices Demo App](step-1-signup-deploy/voltConsole.rst).
 - Otherwise to proceed with WAF microlab, navigate to [WAF Lab](waf-lab/waf-lab.rst)
 
-For Bot Defense microlab, navigate to  [Bot Lab](bot-lab/startHere.rst)
+For Bot Defense lab, navigate to  [Bot Lab](bot-lab/startHere.rst)
+
+For Client Side Defense lab, navigate to  [CSD Lab](csd/start-csd-intro.rst)
 
 
 
